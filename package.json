@@ -21,5 +21,9 @@
     "bootstrap": "^5.3.3",
     "propper": "^1.0.4",
     "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-copy": "^4.0.1"
   }
 }
