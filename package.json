@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "propper": "^1.0.4",
     "scss": "^0.2.4"
   }
 }
