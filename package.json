@@ -1,0 +1,24 @@
+{
+  "name": "parazeeknova-landing-page",
+  "version": "1.0.0",
+  "description": "A modern landing page to showcase my software developer journey",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parazeeknova/Myfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "landing-page",
+    "bootstrap",
+    "scss"
+  ],
+  "author": "Harsh Sahu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/yourusername/Myfolio/issues"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "scss": "^0.2.4"
+  }
+}
