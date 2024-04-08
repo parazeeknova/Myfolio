@@ -1,0 +1,10 @@
+$bg : rgba(17, 17, 17, 0.7);
+
+.bg-custom {
+  background-color: $bg;
+  backdrop-filter: blur(20px);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+  }

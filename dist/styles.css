@@ -1,1 +1,9 @@
-/*# sourceMappingURL=styles.css.map */
+.bg-custom {
+  background-color: rgba(17, 17, 17, 0.7);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}/*# sourceMappingURL=styles.css.map */
