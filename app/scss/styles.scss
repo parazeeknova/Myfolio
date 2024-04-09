@@ -1,5 +1,22 @@
 $bg : rgba(17, 17, 17, 0.7);
 
+@font-face {
+  font-family: 'Auralise';
+  src: url('fonts/Auralise.ttf') format('truetype');
+
+  font-family: 'Duffish';
+  src: url('fonts/Duffish.ttf') format('truetype');
+
+  font-family: 'Beezle';
+  src: url('fonts/Beezle.ttf') format('truetype');
+
+  font-family: 'Akelia';
+  src: url('fonts/Akelia.ttf') format('truetype');
+
+  font-family: 'Sterion';
+  src: url('fonts/Sterion.ttf') format('truetype');
+}
+
 .bg-custom {
   background-color: $bg;
   backdrop-filter: blur(20px);
@@ -8,3 +25,15 @@ $bg : rgba(17, 17, 17, 0.7);
 .navbar-toggler-icon {
     filter: invert(1);
   }
+
+.navbar-brand {
+    font-family: 'Beezle','Akelia';
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    font-family: 'Beezle';
+    font-size: 1rem;
+    letter-spacing: 0.75px;
+}
