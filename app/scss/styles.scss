@@ -1,4 +1,4 @@
-$bg : rgba(17, 17, 17, 0.7);
+@forward 'globals';
 
 @font-face {
   font-family: 'Auralise';
@@ -15,25 +15,4 @@ $bg : rgba(17, 17, 17, 0.7);
 
   font-family: 'Sterion';
   src: url('fonts/Sterion.ttf') format('truetype');
-}
-
-.bg-custom {
-  background-color: $bg;
-  backdrop-filter: blur(20px);
-}
-
-.navbar-toggler-icon {
-    filter: invert(1);
-  }
-
-.navbar-brand {
-    font-family: 'Beezle','Akelia';
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-}
-
-.nav-link {
-    font-family: 'Beezle';
-    font-size: 1rem;
-    letter-spacing: 0.75px;
 }
