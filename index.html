@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +8,38 @@
     <link rel="stylesheet" href="dist/css/bootstrap.css" />
     <link rel="stylesheet" href="dist/styles.css" />
   </head>
-  
   <body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary ms-sm-auto opacity-75">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">
+          <img
+            src="/resources/logo/logo-white.svg"
+            alt="HashCodes Logo"
+            width="120"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler opacity-75 border-dark-subtle width-50"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav opacity-75 ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#">Resume</a>
+            <a class="nav-link">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <script src="dist/js/bootstrap.bundle.js"></script>
   </body>
