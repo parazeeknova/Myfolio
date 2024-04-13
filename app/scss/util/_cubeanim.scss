@@ -1,0 +1,75 @@
+.loader-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10vh;
+  margin-top: -24vh;
+  width: 100%;
+  height: 10rem;
+  perspective: 800px;
+  pointer-events: none;
+}
+
+@media (max-width: 680px) {
+  /* Applies the styles when the viewport width is 768px or less */
+  .loader-container {
+    display: none; /* Hides the loader container */
+  }
+}
+
+.loader-cube {
+  position: relative;
+  margin-right: 10vh;
+  width: 5em;
+  height: 5em;
+  transform-style: preserve-3d;
+  animation: rotateCube 2s infinite linear;
+}
+
+.loader-side {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  background: #333;
+  border: 0.1em solid #fff;
+}
+
+.front {
+  transform: translateZ(2.5em);
+}
+.back {
+  transform: rotateY(180deg) translateZ(2.5em);
+}
+.right {
+  transform: rotateY(90deg) translateZ(2.5em);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(2.5em);
+}
+.top {
+  transform: rotateX(90deg) translateZ(2.5em);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(2.5em);
+}
+
+@keyframes rotateCube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.loader-side:hover {
+  background: #555;
+}
+
+.loader-side:focus {
+  border: 0.1em solid #999;
+}
+
+.loader-side:active {
+  opacity: 0.8;
+}
