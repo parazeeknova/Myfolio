@@ -1,0 +1,25 @@
+:root {
+    --_fw-900: 900;
+    --_fw-700: 700;
+    --_fw-400: 400;
+
+    --_clr-900: hsl(0, 0%, 100%);
+    --_clr-700: hsl(0, 0%, 80%);
+    --_clr-400: hsl(0, 0%, 60%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.bg-custom {
+    background-image: url('/resources/background/bak.gif');
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
