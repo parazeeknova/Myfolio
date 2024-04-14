@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="dist/styles.css" />
   </head>
   <body class="bg-custom">
-    
-    <nav class="navbar navbar-expand-md bg-body-tertiary ms-sm-auto opacity-75 shadow">
+    <nav
+      class="navbar navbar-expand-md bg-body-tertiary ms-sm-auto opacity-75 shadow"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="#home">
           <img
@@ -46,25 +47,42 @@
       <section class="hero">
         <div class="container">
           <div class="row">
-            <div class="p-3 mx-1 col-sm-8">
-              <div class="bubble-text text">Harsh Sahu</div>
-              <p class="text-sm-start desc">Your description goes here.</p>
+            <div class="d-flex align-items-start">
+              <div class="p-3 mx-1 col-sm-8">
+                <div class="bubble-text text">Harsh Sahu</div>
+                <p class="text-sm-start fw-semibold opacity-75 ms-auto">
+                  CSE Undergrad @ VIT
+                </p>
+                <p class="text-sm-start desc opacity-75 fw-light ms-auto">
+                  From tinkering with Raspberry Pi in 2018 to building
+                  full-fledged applications today, I'm a passionate developer
+                  with a knack for web development and a love for open-source
+                  (like Linux!). My journey began with hands-on exploration
+                  through Raspberry Pi, where I configured and experimented,
+                  igniting my curiosity for coding. Fast forward to the present,
+                  I'm actively building my own text editor and websites.
+                </p>
+                <p class="text-sm-start desc opacity-75 fw-light ms-auto">
+                  My main focus, these days is building
+                  <a href="#"><strong>NyxText</strong></a
+                  >, while also expanding my knowledge of Javascript. My passion
+                  lies at the intersection of design and engineering – crafting
+                  software that's not only visually appealing but also boasts a
+                  well-structured foundation.
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <img
+                  src="resources/dev/p.jpg"
+                  alt="Dev's Photo"
+                  class="img-fluid opacity-75 rounded-top-2 shadow image-dev"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-
-    <div class="loader-container opacity-50">
-      <div class="loader-cube">
-        <div class="loader-side front"></div>
-        <div class="loader-side back"></div>
-        <div class="loader-side left"></div>
-        <div class="loader-side right"></div>
-        <div class="loader-side top"></div>
-        <div class="loader-side bottom"></div>
-      </div>
-    </div>
 
     <script src="/app/js/script.js"></script>
     <script src="dist/js/bootstrap.bundle.js"></script>

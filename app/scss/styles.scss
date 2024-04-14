@@ -56,3 +56,19 @@
     }
   }
 }
+
+.image-dev {
+  padding: 2.5vh;
+  margin-top: 6vh;
+  border-radius: 50%;
+  animation: updown 4s ease-in-out infinite;
+}
+
+@keyframes updown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
