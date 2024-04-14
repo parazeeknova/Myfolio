@@ -14,7 +14,7 @@
 }
 
 .bg-custom {
-  background-image: url("/resources/background/bak.gif");
+  background-image: url("resources/background/bak.gif");
   background-size: cover;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
