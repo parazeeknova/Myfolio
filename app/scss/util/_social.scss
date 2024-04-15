@@ -9,15 +9,22 @@ $linkedin: #4dabf7;
   justify-content: center;
   align-items: center;
   height: 100%;
+  flex-wrap: wrap;
 }
 
 .social .social-item {
+  position: relative;
   margin: 0 30px;
   width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 600px) {
+    width: 40px; 
+    margin: 15px 30px;
+  }
 }
 
 .social .social-item .social-link {

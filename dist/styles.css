@@ -42,15 +42,23 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  flex-wrap: wrap;
 }
 
 .social .social-item {
+  position: relative;
   margin: 0 30px;
   width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 600px) {
+  .social .social-item {
+    width: 40px;
+    margin: 15px 30px;
+  }
 }
 
 .social .social-item .social-link {
@@ -195,6 +203,22 @@
   color: #ffffff;
 }
 
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .bubble {
   animation: updown 6s infinite;
 }
