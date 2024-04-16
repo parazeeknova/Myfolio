@@ -20,10 +20,10 @@ function splitTextIntoSpans (target) {
 splitTextIntoSpans('.bubble-text')
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    var toastEl = document.getElementById('welcomeToast');
-    var toast = new bootstrap.Toast(toastEl, {
-      delay: 5000, // Autohide after 5 seconds
-      autohide: true
-    });
-    toast.show();
-});
+  const toastEl = document.getElementById('welcomeToast')
+  const toast = new bootstrap.Toast(toastEl, {
+    delay: 5000, // Autohide after 5 seconds
+    autohide: true
+  })
+  toast.show()
+})
