@@ -38,9 +38,9 @@ document.getElementById('devPhoto').addEventListener('click', (event) => {
 })
 
 const backgrounds = [
-  '../resources/background/sppokII.gif',
-  '../resources/background/Neko.gif',
-  '../resources/background/space.gif'
+  'resources/background/sppokII.gif',
+  'resources/background/Neko.gif',
+  'resources/background/space.gif'
 ]
 let currentBackgroundIndex = 0
 
