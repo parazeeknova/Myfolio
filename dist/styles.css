@@ -231,6 +231,20 @@ body::-webkit-scrollbar-thumb {
   transition: all 450ms ease-in-out;
 }
 
+.btnII {
+  border: none;
+  width: 16em;
+  height: 4em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
 .sparkle {
   fill: #AAAAAA;
   transition: all 800ms ease;
@@ -252,7 +266,18 @@ body::-webkit-scrollbar-thumb {
   color: white;
 }
 
+.btnII:hover .text {
+  color: white;
+  transition: all 800ms ease;
+  transform: scale(1.1);
+}
+
 .btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+}
+
+.btnII:hover .sparkle {
   fill: white;
   transform: scale(1.2);
 }
@@ -342,10 +367,13 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .fighting {
+  opacity: 0;
   display: none;
+  transition: opacity 0.5s 1s, visibility 0s 1s;
 }
 
 .fighting-gif:hover + .fighting {
+  opacity: 1;
   display: block;
   animation: updown 4s ease-in-out infinite;
 }/*# sourceMappingURL=styles.css.map */

@@ -36,3 +36,15 @@ document.getElementById('devPhoto').addEventListener('click', (event) => {
   });
   toast.show();
 });
+
+var backgrounds = [
+  '../resources/background/sppokII.gif',
+  '../resources/background/Neko.gif',
+  '../resources/background/space.gif'
+];
+var currentBackgroundIndex = 0;
+
+document.getElementById('changeBackgroundButton').addEventListener('click', (event) => {
+  currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+  document.querySelector('.bg-custom').style.backgroundImage = "url('" + backgrounds[currentBackgroundIndex] + "')";
+});

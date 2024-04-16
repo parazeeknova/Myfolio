@@ -75,10 +75,13 @@
 }
 
 .fighting {
+  opacity: 0;
   display:none;
+  transition: opacity 0.5s 1s, visibility 0s 1s;
 }
 
 .fighting-gif:hover + .fighting {
+  opacity: 1;
   display: block;
   animation: updown 4s ease-in-out infinite;
 }
