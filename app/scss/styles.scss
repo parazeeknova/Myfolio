@@ -73,3 +73,12 @@
     transform: translateY(-8px);
   }
 }
+
+.fighting {
+  display:none;
+}
+
+.fighting-gif:hover + .fighting {
+  display: block;
+  animation: updown 4s ease-in-out infinite;
+}
