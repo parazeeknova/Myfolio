@@ -38,9 +38,11 @@ document.getElementById('devPhoto').addEventListener('click', (event) => {
 })
 
 const backgrounds = [
-  'resources/background/sppokII.gif',
-  'resources/background/Neko.gif',
-  'resources/background/space.gif'
+  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/sppokII.gif?raw=true',
+  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/Neko.gif?raw=true',
+  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/space.gif?raw=true',
+  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/plane.gif?raw=true',
+  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/rain.gif?raw=true'
 ]
 let currentBackgroundIndex = 0
 
