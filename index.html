@@ -110,6 +110,7 @@
                   src="resources/dev/p.jpg"
                   alt="Dev's Photo"
                   class="img-fluid opacity-75 rounded-top-2 shadow image-dev m-4"
+                  id="devPhoto"
                 />
               </div>
             </div>
@@ -117,6 +118,26 @@
         </div>
       </section>
     </main>
+
+    <div
+    class="toast align-items-center position-absolute top-0 start-50 translate-middle-x m-3 shadow-1 opacity-50 bg-body-tertiary"
+    role="alert"
+    aria-live="polite"
+    aria-atomic="true"
+    id="photoToast"
+  >
+      <div class="toast-header opacity-50">
+        <strong class="me-auto">Harsh 😺</strong>
+        <small class="text-body-secondary">1 sec ago</small>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="toast-body">Busted! Caught you checking out my pic 👀. Don't worry, it's definitely me (with both thumbs up, obviously). Feel free to keep exploring!🚀</div>
+  </div>
 
     &nbsp;
 
@@ -616,6 +637,8 @@
       </svg>
       <span class="text">Projects</span>
     </button>
+
+    
 
     <script src="app/js/script.js"></script>
     <script src="dist/js/bootstrap.bundle.js"></script>

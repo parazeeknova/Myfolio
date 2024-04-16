@@ -22,8 +22,17 @@ splitTextIntoSpans('.bubble-text')
 document.addEventListener('DOMContentLoaded', (event) => {
     var toastEl = document.getElementById('welcomeToast');
     var toast = new bootstrap.Toast(toastEl, {
-      delay: 5000, // Autohide after 5 seconds
+      delay: 6000,
       autohide: true
     });
     toast.show();
+});
+
+document.getElementById('devPhoto').addEventListener('click', (event) => {
+  var toastEl = document.getElementById('photoToast');
+  var toast = new bootstrap.Toast(toastEl, {
+    delay: 6000, 
+    autohide: true
+  });
+  toast.show();
 });
