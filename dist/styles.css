@@ -318,8 +318,8 @@ body::-webkit-scrollbar-thumb {
   font-size: clamp(2rem, 2rem + 3.5vw, 8rem);
   color: hsl(0, 0%, 50%);
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+       user-select: none;
 }
 .bubble-text.split-text {
   display: inline-flex;
@@ -327,8 +327,6 @@ body::-webkit-scrollbar-thumb {
 .bubble-text .split-char {
   font-weight: 200;
   transition: font-weight 0.5s ease;
-  /* // right side */
-  /* // left side */
 }
 .bubble-text .split-char:hover {
   font-weight: var(--_fw-900);
@@ -356,6 +354,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: 6vh;
   border-radius: 50%;
   animation: updown 4s ease-in-out infinite;
+  margin: 10px;
 }
 
 @keyframes updown {
@@ -364,6 +363,11 @@ body::-webkit-scrollbar-thumb {
   }
   50% {
     transform: translateY(-8px);
+  }
+}
+@media (max-width: 600px) {
+  .image-dev {
+    margin: 0;
   }
 }
 .fighting {
