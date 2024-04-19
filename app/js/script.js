@@ -46,7 +46,6 @@ document.getElementById('devPhotomini').addEventListener('click', (event) => {
   toast.show()
 })
 
-
 const backgrounds = [
   'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/sppokII.gif?raw=true',
   'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/Neko.gif?raw=true',
