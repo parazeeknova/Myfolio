@@ -37,6 +37,16 @@ document.getElementById('devPhoto').addEventListener('click', (event) => {
   toast.show()
 })
 
+document.getElementById('devPhotomini').addEventListener('click', (event) => {
+  const toastEl = document.getElementById('trollToast')
+  const toast = new bootstrap.Toast(toastEl, {
+    delay: 6000,
+    autohide: true
+  })
+  toast.show()
+})
+
+
 const backgrounds = [
   'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/sppokII.gif?raw=true',
   'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/Neko.gif?raw=true',
