@@ -1211,18 +1211,18 @@
           </ul>
         </div>
 
-        <form id="contactForm" class="opacity-75 shadow bg-body-tertiary px-2">
+        <form id="contactForm" action="https://formspree.io/f/xrgnrqnz" method="POST" class="opacity-75 shadow bg-body-tertiary px-2">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required>
+            <input type="text" class="form-control" id="name" name="name" required>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required>
+            <input type="email" class="form-control" id="email" name="email" required>
           </div>
           <div class="mb-3">
             <label for="messageType" class="form-label">Message Type</label>
-            <select class="form-select" id="messageType" required>
+            <select class="form-select" id="messageType" name="messageType" required>
               <option value="">Select a type</option>
               <option value="personal">Personal</option>
               <option value="work">Work</option>
@@ -1230,9 +1230,9 @@
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="3" required></textarea>
+            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" name="submit">Submit</button>
         </form>
 
       </footer>
