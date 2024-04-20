@@ -282,6 +282,10 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.2);
 }
 
+.small-margin {
+  margin: 0.1em 0;
+}
+
 .fade-in {
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;
