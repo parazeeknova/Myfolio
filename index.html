@@ -10,6 +10,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body class="bg-custom fade-in">
+    <div id="loader">
+      <div class="ls-particles ls-part-1"></div>
+      <div class="ls-particles ls-part-2"></div>
+      <div class="ls-particles ls-part-3"></div>
+      <div class="ls-particles ls-part-4"></div>
+      <div class="ls-particles ls-part-5"></div>
+      <div class="lightsaber ls-left ls-green"></div>
+      <div class="lightsaber ls-right ls-red"></div>
+    </div>
+
     <nav
       class="navbar navbar-expand-md bg-body-tertiary ms-sm-auto opacity-75 shadow border-bottom border-dark-subtle"
     >
@@ -1454,6 +1464,12 @@
           $("html, body").animate({ scrollTop: 0 }, 800);
           return false;
         });
+      });
+    </script>
+
+    <script>
+      $(window).on("load", function () {
+        $("#loader").fadeOut("slow");
       });
     </script>
   </body>
