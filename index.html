@@ -1178,10 +1178,69 @@
 
     &nbsp;
 
+    <div class="container-fluid bg-body-tertiary opacity-75">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img class="d-inline-block img-fluid px-2" src="resources/logo/logo-white.svg" alt="Logo" width="300">
+          </a>
+          <p class="text-body-secondary px-2">&copy; 2024</p>
+        </div>
+        <div class="col mb-3">
+        </div>
+        <div class="col mb-3">
+          <h5>Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Projects</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Resume</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Profile</a></li>
+          </ul>
+        </div>
     
+        <div class="col mb-3">
+          <h5>Community</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Issues</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Discussions</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Github</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Hire me</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">License</a></li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="opacity-75 shadow bg-body-tertiary px-2">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="messageType" class="form-label">Message Type</label>
+            <select class="form-select" id="messageType" required>
+              <option value="">Select a type</option>
+              <option value="personal">Personal</option>
+              <option value="work">Work</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      </footer>
+    </div>
 
     <script src="app/js/script.js"></script>
     <script src="dist/js/bootstrap.bundle.js"></script>
     <script src="app/js/popovers.js"></script>
+    <script src="app/js/contact.js"></script>
   </body>
 </html>
