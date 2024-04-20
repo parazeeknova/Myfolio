@@ -49,8 +49,8 @@
               >About</a
             >
             <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#">Resume</a>
-            <a class="nav-link">Contact</a>
+            <a class="nav-link" href="#resume">Resume</a>
+            <a class="nav-link" href="#contactthroughmail">Contact</a>
           </div>
           <div
             class="flex-shrink-0 dropdown bg-body-tertiary px-3"
@@ -427,6 +427,7 @@
               developers and give back to the community. This website showcases
               some of my work. Feel free to take a look around and get in touch!
             </p>
+            <a class="btn btn-outline-secondary" id="resume" href="resources/dev/HarshSahuResume.pdf" download>Resume ↓</a>
           </div>
           <div class="card-footer">
             <small class="text-body-secondary">Last updated 1 months ago</small>
@@ -1244,23 +1245,23 @@
               <a href="/" class="nav-link p-0 text-body-secondary">Home</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#project" class="nav-link p-0 text-body-secondary"
+              <a href="#projects" class="nav-link p-0 text-body-secondary"
                 >Projects</a
               >
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">Resume</a>
+              <a href="#resume" class="nav-link p-0 text-body-secondary">Resume</a>
             </li>
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#about" class="nav-link p-0 text-body-secondary"
+              <a href="#aboutsection" class="nav-link p-0 text-body-secondary"
                 >About</a
               >
             </li>
             <li class="nav-item mb-2">
-              <a href="#about" class="nav-link p-0 text-body-secondary"
+              <a href="#aboutsection" class="nav-link p-0 text-body-secondary"
                 >Profile</a
               >
             </li>
@@ -1270,21 +1271,21 @@
           <h5>Community</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">Issues</a>
+              <a href="https://github.com/parazeeknova/Myfolio/issues/new" class="nav-link p-0 text-body-secondary">Issues</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary"
+              <a href="https://github.com/parazeeknova/Myfolio/discussions" class="nav-link p-0 text-body-secondary"
                 >Discussions</a
               >
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">Github</a>
+              <a href="https://github.com/parazeeknova" class="nav-link p-0 text-body-secondary">Github</a>
             </li>
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 text-body-secondary">Hire me</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-body-secondary">License</a>
+              <a href="https://github.com/parazeeknova/Myfolio/blob/main/LICENSE" class="nav-link p-0 text-body-secondary">License</a>
             </li>
           </ul>
         </div>
@@ -1296,7 +1297,7 @@
           class="m-auto"
         >
           <div class="mb-2">
-            <h5 class="text-body-secondary">Contact Me</h5>
+            <h5 class="text-body-secondary" id="contactthroughmail">Contact Me</h5>
             <label for="name" class="form-label">Name</label>
             <input
               type="text"
@@ -1470,6 +1471,26 @@
     <script>
       $(window).on("load", function () {
         $("#loader").fadeOut("slow");
+      });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $('a.nav-link').click(function(event){
+          var href = $(this).attr('href');
+          if (href.startsWith('#')) {
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: $(href).offset().top
+            }, 500);
+          }
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $('a').attr('target', '_blank');
       });
     </script>
   </body>
