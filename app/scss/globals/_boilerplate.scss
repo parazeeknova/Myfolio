@@ -1,36 +1,39 @@
 :root {
-    --_fw-900: 900;
-    --_fw-700: 700;
-    --_fw-400: 400;
+  --_fw-900: 900;
+  --_fw-700: 700;
+  --_fw-400: 400;
 
-    --_clr-900: hsl(0, 0%, 100%);
-    --_clr-700: hsl(0, 0%, 80%);
-    --_clr-400: hsl(0, 0%, 60%);
+  --_clr-900: hsl(0, 0%, 100%);
+  --_clr-700: hsl(0, 0%, 80%);
+  --_clr-400: hsl(0, 0%, 60%);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  overflow-x: hidden;
+}
 
 .bg-custom {
-    background-image: url('../resources/background/catraingreen.gif');
-    background-size: cover;
-    backdrop-filter: blur(15px);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  background-image: url("../resources/background/catraingreen.gif");
+  background-size: cover;
+  backdrop-filter: blur(15px);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 body::-webkit-scrollbar {
-    width: 0.4rem;
+  width: 0.4rem;
 }
 
 body::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #5d856d;
+  background: #5d856d;
 }
