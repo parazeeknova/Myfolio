@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body class="bg-custom">
+    <div id="progress-bar"></div>
     <nav
       class="navbar navbar-expand-md bg-body-tertiary ms-sm-auto opacity-75 shadow border-bottom border-dark-subtle"
     >
@@ -39,12 +40,14 @@
               >About</a
             >
             <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#custom-cards">Work</a>
             <a class="nav-link" href="#resume">Resume</a>
+            <a class="nav-link" href="#moreinfo">More info</a>
             <a class="nav-link" href="#contactthroughmail">Contact</a>
           </div>
           <div
             class="flex-shrink-0 dropdown bg-body-tertiary px-3"
-            id="devPhotomini"
+            id="devPhotomini" 
           >
             <a
               href="#"
@@ -1585,7 +1588,7 @@
       </div>
     </div>
 
-    <div class="container-fluid px-4 py-5 bg-body-tertiary opacity-75 fade-in">
+    <div class="container-fluid px-4 py-5 bg-body-tertiary opacity-75 fade-in" id="moreinfo">
       <h2 class="pb-2 border-bottom">
         <strong>More about Me & Updates</strong>
       </h2>
@@ -2031,5 +2034,15 @@
         });
       });
     </script>
+
+    <script>
+      window.addEventListener('scroll', function() {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var progress = (scrollTop / docHeight) * 100;
+        document.getElementById('progress-bar').style.height = progress + '%';
+      });
+    </script>
+    
   </body>
 </html>

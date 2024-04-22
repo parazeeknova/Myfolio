@@ -290,6 +290,11 @@ body::-webkit-scrollbar-thumb {
   margin: 0.1em 0;
 }
 
+@media screen and (max-width: 768px) {
+  #devPhotomini {
+    display: none;
+  }
+}
 .fade-in {
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;
@@ -378,6 +383,16 @@ body::-webkit-scrollbar-thumb {
     display: none;
   }
 }
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 0;
+  background: #5d856d;
+  z-index: 9999;
+}
+
 .bubble {
   animation: updown 6s infinite;
 }
