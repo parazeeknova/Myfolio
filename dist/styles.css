@@ -762,4 +762,8 @@ body::-webkit-scrollbar-thumb {
   opacity: 1;
   bottom: unset;
   transition-duration: 0.3s;
+}
+
+.badge > a {
+  color: inherit;
 }/*# sourceMappingURL=styles.css.map */
