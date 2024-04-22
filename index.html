@@ -9,17 +9,7 @@
     <link rel="stylesheet" href="dist/styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
-  <body class="bg-custom fade-in">
-    <div id="loader">
-      <div class="ls-particles ls-part-1"></div>
-      <div class="ls-particles ls-part-2"></div>
-      <div class="ls-particles ls-part-3"></div>
-      <div class="ls-particles ls-part-4"></div>
-      <div class="ls-particles ls-part-5"></div>
-      <div class="lightsaber ls-left ls-green"></div>
-      <div class="lightsaber ls-right ls-red"></div>
-    </div>
-
+  <body class="bg-custom">
     <nav
       class="navbar navbar-expand-md bg-body-tertiary ms-sm-auto opacity-75 shadow border-bottom border-dark-subtle"
     >
@@ -137,10 +127,10 @@
             <div class="d-flex align-items-start">
               <div class="p-3 mx-1 col-sm-8">
                 <div class="bubble-text text">Harsh Sahu</div>
-                <p class="text-sm-start fw-semibold opacity-75 ms-auto">
+                <p class="text-sm-start fw-semibold opacity-75 ms-auto fade-in">
                   CSE Undergrad @ VIT
                 </p>
-                <p class="text-sm-start desc opacity-75 fw-light ms-auto">
+                <p class="text-sm-start desc opacity-75 fw-light ms-auto fade-in">
                   From tinkering with Raspberry Pi in 2018 to building
                   full-fledged applications today, I'm a passionate developer
                   with a knack for web development and a love for open-source
@@ -149,7 +139,7 @@
                   igniting my curiosity for coding. Fast forward to the present,
                   I'm actively building my own text editor and websites.
                 </p>
-                <p class="text-sm-start desc opacity-75 fw-light ms-auto">
+                <p class="text-sm-start desc opacity-75 fw-light ms-auto fade-in">
                   My main focus, these days is building
                   <strong>NyxText</strong>, while also expanding my knowledge of
                   Javascript. My passion lies at the intersection of design and
@@ -157,7 +147,7 @@
                   appealing but also boasts a well-structured foundation.
                 </p>
                 <p
-                  class="text-sm-start desc opacity-75 fw-light ms-auto fighting-gif"
+                  class="text-sm-start desc opacity-75 fw-light ms-auto fighting-gif fade-in"
                 >
                   <strong
                     >Outside of coding I play a lot of video games mostly "from
@@ -255,7 +245,7 @@
       <span class="text">Socials</span>
     </button>
 
-    <ul id="socials" class="social opacity-75 m-5 p-2">
+    <ul id="socials" class="social opacity-75 m-5 p-2 fade-in">
       <li class="social-item">
         <a class="social-link" href="https://discord.gg/PJDy9dGB">
           <svg
@@ -396,7 +386,7 @@
       <span class="text">About Me</span>
     </button>
 
-    <div class="row row-cols-1 row-cols-md-2 g-4 m-4 opacity-75">
+    <div class="row row-cols-1 row-cols-md-2 g-4 m-4 opacity-75 fade-in">
       <div class="col">
         <div class="card h-100 bg-body-tertiary">
           <img
@@ -921,7 +911,7 @@
       <span class="text" id="projects">Projects</span>
     </button>
 
-    <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-4 m-4 g-4 opacity-75">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-4 m-4 g-4 opacity-75 fade-in">
       <div class="col">
         <div class="card bg-body-tertiary shadow-sm">
           <div
@@ -1489,7 +1479,7 @@
 
     &nbsp;
 
-    <div class="container-fluid px-4 py-5 opacity-75" id="custom-cards">
+    <div class="container-fluid px-4 py-5 opacity-75 fade-in" id="custom-cards">
       <h2 class="pb-2 border-bottom"><strong>Client Work</strong></h2>
 
       <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
@@ -1503,11 +1493,16 @@
             <div
               class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 ows"
             >
-            <div class="content-overlay">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Operation Smile</h3>
-              <p>Collaborated as a front-end developer with a senior developer to enhance a non-profit website. 
-                Increased website responsiveness to improve the user experience across devices.</p>
-              <h6 class="text-body-secondary">Hover for Preview</h6> 
+              <div class="content-overlay">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                  Operation Smile
+                </h3>
+                <p>
+                  Collaborated as a front-end developer with a senior developer
+                  to enhance a non-profit website. Increased website
+                  responsiveness to improve the user experience across devices.
+                </p>
+                <h6 class="text-body-secondary">Hover for Preview</h6>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
                     <img
@@ -1533,12 +1528,12 @@
                     <small>April 24 - Present</small>
                   </li>
                 </ul>
-            </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col">
+        <div class="col work-II">
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="background-image: url('unsplash-photo-2.jpg')"
@@ -1546,7 +1541,9 @@
             <div
               class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
             >
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold placeholder-glow">
+              <h3
+                class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold placeholder-glow"
+              >
                 <span class="placeholder col-6 h-25"></span>
               </h3>
               <p class="card-text placeholder-glow">
@@ -1573,12 +1570,12 @@
                   ></i>
                   <small></small>
                 </li>
+                <li class="d-flex align-items-center"></li>
                 <li class="d-flex align-items-center">
-                  <li class="d-flex align-items-center">
-                    <i
-                      class="fa-solid fa-calendar-days bi me-2"
-                      style="color: #ffffff"
-                    ></i>
+                  <i
+                    class="fa-solid fa-calendar-days bi me-2"
+                    style="color: #ffffff"
+                  ></i>
                   <small>Soon !</small>
                 </li>
               </ul>
@@ -1588,8 +1585,10 @@
       </div>
     </div>
 
-    <div class="container-fluid px-4 py-5 bg-body-tertiary opacity-75">
-      <h2 class="pb-2 border-bottom"><strong>More about Me & Updates</strong></h2>
+    <div class="container-fluid px-4 py-5 bg-body-tertiary opacity-75 fade-in">
+      <h2 class="pb-2 border-bottom">
+        <strong>More about Me & Updates</strong>
+      </h2>
 
       <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
         <div class="col d-flex flex-column align-items-start gap-2">
@@ -1597,9 +1596,12 @@
             My Academic & Club Activity (Plus Website News!)
           </h2>
           <p class="text-body-secondary">
-            Here are some details about my university, degree, club work, and website updates, coz Why Not 🤷‍♂️
+            Here are some details about my university, degree, club work, and
+            website updates, coz Why Not 🤷‍♂️
           </p>
-          <a href="#" class="btn btn-primary opacity-75"><h6>What's New 🙀</h6></a>
+          <a href="#" class="btn btn-primary opacity-75"
+            ><h6>What's New 🙀</h6></a
+          >
         </div>
 
         <div class="col">
@@ -1608,11 +1610,12 @@
               <div
                 class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-4 rounded-3"
               >
-              <i class="fa-solid fa-building-columns bi" style="color: #ffffff;"></i>
+                <i
+                  class="fa-solid fa-building-columns bi"
+                  style="color: #ffffff"
+                ></i>
               </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">
-                University
-              </h4>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">University</h4>
               <p class="text-body-secondary w-75">
                 Vellore Institute of Technology, Bhopal, India
               </p>
@@ -1622,13 +1625,16 @@
               <div
                 class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-4 rounded-3"
               >
-              <i class="fa-solid fa-graduation-cap bi" style="color: #ffffff;"></i>
+                <i
+                  class="fa-solid fa-graduation-cap bi"
+                  style="color: #ffffff"
+                ></i>
               </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">
-                Degree
-              </h4>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">Degree</h4>
               <p class="text-body-secondary w-75">
-                Bachelor of Technology in Computer Science and Engineering (CSE) with a specialization in Artificial Intelligence and Machine Learning (AI & ML)
+                Bachelor of Technology in Computer Science and Engineering (CSE)
+                with a specialization in Artificial Intelligence and Machine
+                Learning (AI & ML)
               </p>
             </div>
 
@@ -1636,11 +1642,9 @@
               <div
                 class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-4 rounded-3"
               >
-              <i class="fa-solid fa-people-group" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-people-group" style="color: #ffffff"></i>
               </div>
-              <h4 class="fw-semibold mb-0 text-body-emphasis">
-                Club Activity
-              </h4>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">Club Activity</h4>
               <p class="text-body-secondary">
                 Content Team Member at the Linux Club, Mozilla Firefox Club
               </p>
@@ -1650,7 +1654,10 @@
               <div
                 class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-secondary bg-gradient fs-4 rounded-3"
               >
-              <i class="fa-solid fa-code-pull-request" style="color: #ffffff;"></i>
+                <i
+                  class="fa-solid fa-code-pull-request"
+                  style="color: #ffffff"
+                ></i>
               </div>
               <h4 class="fw-semibold mb-0 text-body-emphasis placeholder-glow">
                 <span class="placeholder col-6"></span>
@@ -1964,12 +1971,6 @@
     </script>
 
     <script>
-      $(window).on("load", function () {
-        $("#loader").fadeOut("slow");
-      });
-    </script>
-
-    <script>
       $(document).ready(function () {
         $("a.nav-link").click(function (event) {
           var href = $(this).attr("href");
@@ -2014,5 +2015,21 @@
       src="https://kit.fontawesome.com/95f1b7c81c.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+      $(document).ready(function() {
+        ScrollReveal().reveal('.fade-in', { 
+          distance: '60px',
+          duration: 1000,
+          delay: 0,
+          opacity: 0,
+          interval: 100,
+          viewFactor: 0.2,
+          reset: true
+        });
+      });
+    </script>
   </body>
 </html>
