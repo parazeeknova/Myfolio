@@ -625,6 +625,73 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
   }
 }
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.text-shadow-1 {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.text-shadow-2 {
+  text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.text-shadow-3 {
+  text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
+}
+
+.ows {
+  position: relative;
+}
+
+.ows:hover::before {
+  opacity: 0;
+}
+
+.ows::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.ows:hover .content-overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
 .bubble {
   animation: updown 6s infinite;
 }
