@@ -1,8 +1,8 @@
 @forward "globals";
 
 @font-face {
-  font-family: 'Playfair';
-  src: url('fonts/Playfair.ttf') format('truetype');
+  font-family: "Playfair";
+  src: url("fonts/Playfair.ttf") format("truetype");
 }
 
 .bubble {
@@ -88,7 +88,9 @@
 .fighting {
   opacity: 0;
   display: none;
-  transition: opacity 0.5s 1s, visibility 0s 1s;
+  transition:
+    opacity 0.5s 1s,
+    visibility 0s 1s;
 }
 
 .fighting-gif:hover + .fighting {
@@ -166,7 +168,7 @@
 
 .background-text {
   position: fixed;
-  font-family: 'Playfair';
+  font-family: "Playfair";
   font-weight: bold;
   left: -10%;
   right: auto;
@@ -181,34 +183,32 @@
   transition: all 0.5s ease-in-out;
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .background-text {
     top: 8%;
     left: -5%;
   }
-  
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
   .background-text {
     font-size: 10em;
     top: 10%;
     left: -6%;
   }
-  
 }
 
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1600px) {
   .background-text {
     font-size: 12em;
     top: 12%;
     left: -5%;
   }
-
 }
 
-@media screen and (max-width: 768px){
-  body, html {
+@media screen and (max-width: 768px) {
+  body,
+  html {
     overflow-x: hidden;
   }
   .background-text {
@@ -216,6 +216,6 @@
     transform: rotate(180deg);
     top: 2%;
     right: -20%;
-    left:auto;
+    left: auto;
   }
 }
