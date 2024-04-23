@@ -10,9 +10,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body class="bg-custom">
-
-    <audio id="toastAudio" src="resources/mics/alert.mp3" preload="auto"></audio>
-    <audio id="whooshAudio" src="resources/mics/whoosh.mp3" preload="auto"></audio>
+    <audio
+      id="toastAudio"
+      src="resources/mics/alert.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="whooshAudio"
+      src="resources/mics/whoosh.mp3"
+      preload="auto"
+    ></audio>
 
     <div id="progress-bar"></div>
     <div class="cursor" id="cursor"></div>
@@ -1983,13 +1990,15 @@
     <script src="app/js/popovers.js"></script>
 
     <script>
-      $('.toast').on('show.bs.toast', function () {
-        document.getElementById('toastAudio').play();
+      $(".toast").on("show.bs.toast", function () {
+        document.getElementById("toastAudio").play();
       });
 
-      document.getElementById('scrollToTop').addEventListener('click', function() {
-        document.getElementById('whooshAudio').play();
-      });
+      document
+        .getElementById("scrollToTop")
+        .addEventListener("click", function () {
+          document.getElementById("whooshAudio").play();
+        });
 
       $(document).ready(function () {
         $("#scrollToTop").click(function () {
