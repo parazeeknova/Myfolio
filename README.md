@@ -5,6 +5,7 @@
 <div align="center">
 
 ## MyFolio - Personal Portfolio Website
+
 <h3><a href="https://harshsahu-portfolio.vercel.app/">harshsahu-portfolio.vercel.app</a> - v1</h3> 
 </div>
 
@@ -15,7 +16,7 @@
 
 Welcome to MyFolio! This website showcases my projects, skills, and experiences. It is designed to provide an overview of my work and help you get to know me better.
 
-![demo](resources/Projects/perfectssdosentexists.png)
+![demo](resources/Projects/hompagev2.png)
 
 ## 🌴 Progress
 
@@ -26,5 +27,7 @@ Welcome to MyFolio! This website showcases my projects, skills, and experiences.
 <div align="center">
 
 #### Under Apache 2.0 License
+
 #### &copy; 2024 Parazeeknova
+
 </div>
