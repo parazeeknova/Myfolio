@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
@@ -1498,7 +1498,7 @@
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
-              background-image: url('resources/Projects/Operationsmile/osw.png');
+              background-image: url(&quot;resources/Projects/Operationsmile/osw.png&quot;);
             "
           >
             <div
@@ -1547,7 +1547,7 @@
         <div class="col work-II">
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')"
+            style="background-image: url(&quot;unsplash-photo-2.jpg&quot;)"
           >
             <div
               class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
@@ -1994,22 +1994,26 @@
               {
                 scrollTop: $(href).offset().top,
               },
-              500
+              500,
             );
           }
         });
       });
 
-      $(document).ready(function(){
-        $('a').on('click', function(event) {
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
           if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-              window.location.hash = hash;
-            });
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              },
+            );
           }
         });
       });

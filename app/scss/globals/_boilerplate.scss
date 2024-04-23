@@ -46,7 +46,9 @@ body {
   cursor: none;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   cursor: none !important;
 }
 

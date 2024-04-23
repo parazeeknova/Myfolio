@@ -84,7 +84,9 @@
 .fighting {
   opacity: 0;
   display: none;
-  transition: opacity 0.5s 1s, visibility 0s 1s;
+  transition:
+    opacity 0.5s 1s,
+    visibility 0s 1s;
 }
 
 .fighting-gif:hover + .fighting {
