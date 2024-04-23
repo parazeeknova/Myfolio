@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
     <div id="progress-bar"></div>
     <div class="cursor" id="cursor"></div>
     <div class="outline" id="outline"></div>
-    
+
     <nav
       class="navbar navbar-expand-md bg-body-tertiary ms-sm-auto opacity-75 shadow border-bottom border-dark-subtle"
     >
@@ -1499,7 +1499,7 @@
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
-              background-image: url('resources/Projects/Operationsmile/osw.png');
+              background-image: url(&quot;resources/Projects/Operationsmile/osw.png&quot;);
             "
           >
             <div
@@ -1548,7 +1548,7 @@
         <div class="col work-II">
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')"
+            style="background-image: url(&quot;unsplash-photo-2.jpg&quot;)"
           >
             <div
               class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
@@ -1978,76 +1978,83 @@
 
     <script>
       $(document).ready(function () {
-      $("#scrollToTop").click(function () {
-        $("html, body").animate({ scrollTop: 0 }, 800);
-        return false;
-      });
-
-      $("a.nav-link").click(function (event) {
-        var href = $(this).attr("href");
-        if (href.startsWith("#")) {
-        event.preventDefault();
-        $("html, body").animate(
-          {
-          scrollTop: $(href).offset().top,
-          },
-          500
-        );
-        }
-      });
-
-      $('a').on('click', function(event) {
-        if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          window.location.hash = hash;
+        $("#scrollToTop").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 800);
+          return false;
         });
-        }
-      });
 
-      $("a").attr("target", "_blank");
+        $("a.nav-link").click(function (event) {
+          var href = $(this).attr("href");
+          if (href.startsWith("#")) {
+            event.preventDefault();
+            $("html, body").animate(
+              {
+                scrollTop: $(href).offset().top,
+              },
+              500,
+            );
+          }
+        });
 
-      ScrollReveal().reveal(".fade-in", {
-        distance: "60px",
-        duration: 1000,
-        delay: 0,
-        opacity: 0,
-        interval: 100,
-        viewFactor: 0.2,
-        reset: true,
-      });
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              },
+            );
+          }
+        });
 
-      window.addEventListener("scroll", function () {
-        var scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-        var docHeight =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-        var progress = (scrollTop / docHeight) * 100;
-        document.getElementById("progress-bar").style.height = progress + "%";
-      });
+        $("a").attr("target", "_blank");
+
+        ScrollReveal().reveal(".fade-in", {
+          distance: "60px",
+          duration: 1000,
+          delay: 0,
+          opacity: 0,
+          interval: 100,
+          viewFactor: 0.2,
+          reset: true,
+        });
+
+        window.addEventListener("scroll", function () {
+          var scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+          var docHeight =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+          var progress = (scrollTop / docHeight) * 100;
+          document.getElementById("progress-bar").style.height = progress + "%";
+        });
       });
 
       window.si =
-      window.si ||
-      function () {
-        (window.siq = window.siq || []).push(arguments);
-      };
+        window.si ||
+        function () {
+          (window.siq = window.siq || []).push(arguments);
+        };
 
       window.va =
-      window.va ||
-      function () {
-        (window.vaq = window.vaq || []).push(arguments);
-      };
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
     </script>
 
     <script defer src="/_vercel/speed-insights/script.js"></script>
     <script defer src="/_vercel/insights/script.js"></script>
 
-    <script src="https://kit.fontawesome.com/95f1b7c81c.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/95f1b7c81c.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="app/js/cursor.js"></script>
   </body>
