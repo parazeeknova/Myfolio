@@ -1,5 +1,5 @@
 // Bubble Animation:
-function splitTextIntoSpans(target) {
+function splitTextIntoSpans (target) {
   const elements = document.querySelectorAll(target)
   elements.forEach((element) => {
     element.classList.add('split-text')
@@ -7,11 +7,15 @@ function splitTextIntoSpans(target) {
     const splitText = text
       .split(' ')
       .map(function (word) {
-        const char = word.split('').map(char => {
-          return `<span class="split-char">${char}</span>`
-        }).join('')
+        const char = word
+          .split('')
+          .map((char) => {
+            return `<span class="split-char">${char}</span>`
+          })
+          .join('')
         return `<div class="split-word">${char}&nbsp</div>`
-      }).join('')
+      })
+      .join('')
 
     element.innerHTML = splitText
   })
@@ -56,16 +60,16 @@ document.getElementById('whatsNew').addEventListener('click', (event) => {
 })
 
 document.getElementById('pedro').addEventListener('click', function () {
-  var video = document.getElementById('myVideo');
-  video.style.display = 'block';
-  video.play();
-});
+  const video = document.getElementById('myVideo')
+  video.style.display = 'block'
+  video.play()
+})
 
-var video = document.getElementById('myVideo');
+const video = document.getElementById('myVideo')
 
-video.addEventListener('pause', function() {
-  video.style.display = 'none';
-});
+video.addEventListener('pause', function () {
+  video.style.display = 'none'
+})
 
 const backgrounds = [
   'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/sppokII.gif?raw=true',
@@ -76,7 +80,10 @@ const backgrounds = [
 ]
 let currentBackgroundIndex = 0
 
-document.getElementById('changeBackgroundButton').addEventListener('click', (event) => {
-  currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length
-  document.querySelector('.bg-custom').style.backgroundImage = "url('" + backgrounds[currentBackgroundIndex] + "')"
-})
+document
+  .getElementById('changeBackgroundButton')
+  .addEventListener('click', (event) => {
+    currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length
+    document.querySelector('.bg-custom').style.backgroundImage =
+      "url('" + backgrounds[currentBackgroundIndex] + "')"
+  })
