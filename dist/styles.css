@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bg-custom {
   background-image: url("../resources/background/catraingreen.gif");
   background-size: cover;
@@ -36,6 +40,58 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: #5d856d;
+}
+
+body {
+  cursor: none;
+}
+
+*, *::before, *::after {
+  cursor: none !important;
+}
+
+.cursor {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  transition-property: background-color, opacity, transform, mix-blend-mode;
+  z-index: 9999;
+}
+
+.outline {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  transition-property: background-color, opacity, transform, mix-blend-mode;
+  z-index: 9998;
+}
+
+.outline--hidden {
+  opacity: 0;
+}
+
+.cursor--hidden {
+  opacity: 0;
+}
+
+.cursor--clicked {
+  transform: scale(0.7);
+}
+
+.cursor--link-hovered {
+  transform: scale(2.5);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 @font-face {
