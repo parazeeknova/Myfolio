@@ -1,5 +1,5 @@
 // Bubble Animation:
-function splitTextIntoSpans (target) {
+function splitTextIntoSpans(target) {
   const elements = document.querySelectorAll(target)
   elements.forEach((element) => {
     element.classList.add('split-text')
@@ -46,6 +46,26 @@ document.getElementById('devPhotomini').addEventListener('click', (event) => {
   toast.show()
 })
 
+document.getElementById('whatsNew').addEventListener('click', (event) => {
+  const toastEl = document.getElementById('whatsNewToast')
+  const toast = new bootstrap.Toast(toastEl, {
+    delay: 12000,
+    autohide: true
+  })
+  toast.show()
+})
+
+document.getElementById('pedro').addEventListener('click', function () {
+  var video = document.getElementById('myVideo');
+  video.style.display = 'block';
+  video.play();
+});
+
+var video = document.getElementById('myVideo');
+
+video.addEventListener('pause', function() {
+  video.style.display = 'none';
+});
 
 const backgrounds = [
   'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/sppokII.gif?raw=true',

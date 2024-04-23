@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
@@ -1513,7 +1513,7 @@
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
-              background-image: url(&quot;resources/Projects/Operationsmile/osw.png&quot;);
+              background-image: url('resources/Projects/Operationsmile/osw.png');
             "
           >
             <div
@@ -1627,9 +1627,60 @@
             Here are some details about my university, degree, club work, and
             website updates, coz Why Not 🤷‍♂️
           </p>
-          <a href="#" class="btn btn-primary opacity-75"
-            ><h6>What's New 🙀</h6></a
+          <div class="col d-flex gap-4 row-cols-auto">
+            <a
+              class="btn btn-primary opacity-50 m-auto"
+              data-bs-toggle="toast"
+              data-bs-target="#whatsNewToast"
+              id="whatsNew"
+              ><h6>What's New 🙀?</h6></a
+            >
+            <button id="pedro" class="btn btn-primary opacity-50 m-auto">
+              <h6>Pedro 🦝</h6>
+            </button>
+          </div>
+          <video
+            class="opacity-75 m-5 bg-body-tertiary"
+            id="myVideo"
+            width="260"
+            height="420"
+            controls
+            style="display: none"
           >
+            <source src="resources/mics/pedro.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div
+          class="toast align-items-center position-absolute top-50 start-50 translate-middle m-3 bg-body-tertiary"
+          role="alert"
+          aria-live="polite"
+          aria-atomic="true"
+          id="whatsNewToast"
+        >
+          <div class="toast-header opacity-75" id="whatsNewtoast-header">
+            <strong class="me-auto">What's New 🙀</strong>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body justify-content-center align-items-center">
+            <p class="text-body-secondary">
+              <strong>Website Update v1.1: </strong> Added scroll animations,
+              Added custom progress bar, Added custom cursor, Added toast &
+              scroll sound effects, Added badges for languages, Added Pedro 🦝,
+              Added Watermark. 🪴
+            </p>
+            <p>
+              <strong>Website Update v1: </strong> Added missing sections
+              (Client work & Updates) 🌱
+            </p>
+            <p><strong>Initial : </strong> Initial commit for the website.🚀</p>
+          </div>
         </div>
 
         <div class="col">
@@ -2014,7 +2065,7 @@
               {
                 scrollTop: $(href).offset().top,
               },
-              500,
+              500
             );
           }
         });
@@ -2030,7 +2081,7 @@
               800,
               function () {
                 window.location.hash = hash;
-              },
+              }
             );
           }
         });

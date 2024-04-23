@@ -46,7 +46,9 @@ body {
   cursor: none;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   cursor: none !important;
 }
 
@@ -642,7 +644,8 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
-  body, html {
+  body,
+  html {
     overflow-x: hidden;
   }
   .background-text {
