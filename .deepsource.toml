@@ -5,3 +5,6 @@ name = "javascript"
 
 [[transformers]]
 name = "standardjs"
+
+[[transformers]]
+name = "prettier"
