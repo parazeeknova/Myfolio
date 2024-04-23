@@ -60,6 +60,7 @@ body {
   position: absolute;
   pointer-events: none;
   transition: all 0.5s ease;
+  box-shadow: 0 0 100px 100px rgba(255, 255, 255, 0.15);
   transition-property: background-color, opacity, transform, mix-blend-mode;
   z-index: 9999;
 }

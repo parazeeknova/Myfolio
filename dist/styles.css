@@ -61,6 +61,7 @@ body {
   position: absolute;
   pointer-events: none;
   transition: all 0.5s ease;
+  box-shadow: 0 0 100px 100px rgba(255, 255, 255, 0.15);
   transition-property: background-color, opacity, transform, mix-blend-mode;
   z-index: 9999;
 }
@@ -105,8 +106,6 @@ body {
   src: url("fonts/Akelia.ttf") format("truetype");
   font-family: "Sterion";
   src: url("fonts/Sterion.ttf") format("truetype");
-  font-family: "Playfair";
-  src: url("fonts/Playfair.ttf") format("truetype");
 }
 .social {
   margin: 0;
@@ -449,6 +448,10 @@ body {
   z-index: 9999;
 }
 
+@font-face {
+  font-family: "Playfair";
+  src: url("fonts/Playfair.ttf") format("truetype");
+}
 .bubble {
   animation: updown 6s infinite;
 }
@@ -590,4 +593,63 @@ body {
 
 .badge > a {
   color: inherit;
+}
+
+.background-text-wrapper {
+  position: relative;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden !important;
+}
+
+.background-text {
+  position: fixed;
+  font-family: "Playfair";
+  font-weight: bold;
+  left: -10%;
+  right: auto;
+  top: 10%;
+  writing-mode: vertical-rl;
+  transform: translateY(-50%);
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  opacity: 0.5;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 1200px) {
+  .background-text {
+    top: 8%;
+    left: -5%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .background-text {
+    font-size: 10em;
+    top: 10%;
+    left: -6%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .background-text {
+    font-size: 12em;
+    top: 12%;
+    left: -5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  .background-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    top: 2%;
+    right: -20%;
+    left: auto;
+  }
 }/*# sourceMappingURL=styles.css.map */
