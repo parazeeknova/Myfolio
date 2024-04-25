@@ -76,6 +76,7 @@ body {
   position: absolute;
   pointer-events: none;
   transition: all 0.5s ease;
+  opacity: 0.2;
   transition-property: background-color, opacity, transform, mix-blend-mode;
   z-index: 9998;
 }
@@ -97,6 +98,15 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+@media screen and (max-width: 768px) {
+  .cursor {
+    box-shadow: 0 0 40px 40px rgba(255, 255, 255, 0.15);
+    opacity: 0.4;
+  }
+  .outline {
+    display: none;
+  }
+}
 @font-face {
   font-family: "Auralise";
   src: url("fonts/Auralise.ttf") format("truetype");
