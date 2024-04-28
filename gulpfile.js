@@ -2,7 +2,8 @@ const gulp = require('gulp')
 const copy = require('gulp-copy')
 
 gulp.task('copy-bootstrap', function () {
-  return gulp.src('node_modules/bootstrap/dist/**/*')
+  return gulp
+    .src('node_modules/bootstrap/dist/**/*')
     .pipe(copy('dist', { prefix: 3 }))
 })
 
