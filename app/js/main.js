@@ -41,7 +41,7 @@ $(document).ready(function () {
     }
   })
 
-  $('a').attr('target', '_blank')
+  $('a:not(.nav-link)').attr('target', '_blank');
 
   ScrollReveal().reveal('.fade-in', {
     distance: '60px',
@@ -62,3 +62,12 @@ $(document).ready(function () {
     document.getElementById('progress-bar').style.height = progress + '%'
   })
 })
+
+$('a.nav-link').on('click', function(e) {
+  e.preventDefault();
+  var url = this.href;
+  $('body').addClass('fade-out');
+  setTimeout(function() {
+      window.location = url;
+  }, 500); 
+});

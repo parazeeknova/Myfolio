@@ -297,7 +297,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 12px;
-  background: #1C1A1C;
+  background: #1c1a1c;
   cursor: pointer;
   transition: all 450ms ease-in-out;
 }
@@ -317,13 +317,13 @@ body {
 }
 
 .sparkle {
-  fill: #AAAAAA;
+  fill: #aaaaaa;
   transition: all 800ms ease;
 }
 
 .text {
   font-weight: 600;
-  color: #AAAAAA;
+  color: #aaaaaa;
   font-size: medium;
 }
 
@@ -664,5 +664,15 @@ body {
     top: 2%;
     right: -20%;
     left: auto;
+  }
+}
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }/*# sourceMappingURL=styles.css.map */
