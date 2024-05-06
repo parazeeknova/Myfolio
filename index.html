@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
@@ -26,7 +26,6 @@
     <link rel="icon" href="resources/logo/hashcodes-favicon.svg" />
     <link rel="stylesheet" href="dist/css/bootstrap.css" />
     <link rel="stylesheet" href="dist/styles.css" />
-    <link rel="stylesheet" href="app/css/materialslider.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
@@ -956,149 +955,565 @@
       <span class="text" id="projects">Featured</span>
     </button>
 
+    <div
+      class="row row-cols-1 row-cols-md-2 row-cols-xxl-4 m-4 g-4 opacity-75 fade-in"
+    >
+      <div class="col">
+        <div class="card bg-body-tertiary shadow-sm">
+          <div
+            id="NyxText"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#NyxText"
+                data-bs-slide-to="0"
+                class="active opacity-50"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#NyxText"
+                data-bs-slide-to="1"
+                class="opacity-50"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#NyxText"
+                data-bs-slide-to="2"
+                class="opacity-50"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="resources/Projects/NyxText/Catppuccin_color_scheme.png"
+                  class="d-block w-100"
+                  alt="catppuccin color scheme"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Catppuccin Color Scheme</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="resources/Projects/NyxText/flavours.png"
+                  class="d-block w-100"
+                  alt="flavours of nyxtext"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Different Color Schemes</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="resources/Projects/NyxText/terminal.png"
+                  class="d-block w-100"
+                  alt="terminal support"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Terminal Support</h5>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#NyxText"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#NyxText"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-      <div class="demo-slider pt-5 pb-0 opacity-75">
-        <!-- Material slider -->
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <!-- Wrap each slide content with "swiper-material-wrapper" and "swiper-material-content" elements -->
-              <div class="swiper-material-wrapper">
-                <div class="swiper-material-content">
-                  <!-- Use data-swiper-material-scale to add scale effect on required elements -->
-                  <img
-                    class="demo-material-image"
-                    data-swiper-material-scale="1.25"
-                    src="resources/Projects/NyxText/Catppuccin_color_scheme.png"
-                  />
-                  <!-- Use swiper-material-animate-opacity class to add opacity animation on required elements -->
+          <div class="card-body">
+            <h5 class="card-title">
+              NyxText: A Versatile Text Editor for Writers and Coders
+            </h5>
+            <p class="card-text">
+              Nyxtext is a text editor designed to cater to the needs of both
+              writers and coders. It offers a user-friendly interface with
+              features specifically tailored for each user group. Nyxtext
+              provides essential writing tools like text correction, spell
+              checking, and potentially grammar suggestions (to be added in
+              future). These features help writers focus on their content and
+              produce polished documents. Nyxtext empowers coders with
+              functionalities like syntax highlighting, multiple code
+              workspaces, and integrated terminal access. These features
+              streamline the coding workflow, improve code readability, and
+              enhance developer productivity. Developed using Python and a
+              custom Tkinter framework, Nyxtext is open-source and welcomes
+              collaboration from the developer community. This collaborative
+              approach fosters continuous improvement and feature addition.
+              Nyxtext is currently in its alpha development stage. While it
+              offers several core functionalities, there are many exciting
+              features planned for future releases.
+            </p>
+            <a
+              href="https://github.com/parazeeknova/nyxtext"
+              class="btn btn-primary m-2 opacity-50"
+              >Github Repo ↺</a
+            >
+            <a href="#Projects" class="btn btn-primary m-2 opacity-50"
+              >More Info ↥</a
+            >
+          </div>
+          <div class="card-footer">
+            <h6 class="text-body-secondary">
+              <strong>Built with: </strong>
+              <div class="d-flex gap-2 justify-content-center py-2 opacity-75">
+                <div class="row row-cols-auto">
                   <span
-                    class="demo-material-label swiper-material-animate-opacity"
-                    >NyxText</span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
                   >
+                    <i
+                      class="fa-brands fa-python rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Python
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-solid fa-window-maximize rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Tkinter
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-solid fa-window-restore rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Custom Tkinter
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-brands fa-js rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Json
+                  </span>
+                </div>
+              </div>
+            </h6>
+            <small class="text-body-secondary"
+              >Last updated 1 months ago | Alpha Stage | Desktop
+              Application</small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div
+            id="AIclub"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#AIclub"
+                data-bs-slide-to="0"
+                class="active opacity-50"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#AIclub"
+                data-bs-slide-to="1"
+                class="opacity-50"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#AIclub"
+                data-bs-slide-to="2"
+                class="opacity-50"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="resources/Projects/AI-club-web/homepage.png"
+                  class="d-block w-100"
+                  alt="Homepage for AI club"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Homepage</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="resources/Projects/AI-club-web/scroll.png"
+                  class="d-block w-100"
+                  alt="Footer"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Second Half</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="resources/Projects/AI-club-web/highm.png"
+                  class="d-block w-100"
+                  alt="Mobile View"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Mobile View</h5>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="swiper-material-wrapper">
-                <div class="swiper-material-content">
-                  <img
-                    class="demo-material-image"
-                    data-swiper-material-scale="1.25"
-                    src="resources/Projects/NyxText/flavours.png"
-                  />
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#AIclub"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#AIclub"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">AI Club's Website</h5>
+            <p class="card-text">
+              This project showcases my first foray into front-end development,
+              created for the AI club's task round at my university. Built
+              entirely with HTML and CSS. Clean and Consistent Design: The
+              website utilizes a fixed color scheme, ensuring a cohesive and
+              visually appealing user experience. Modern Look: Embracing modern
+              design principles, the website offers a fresh and up-to-date
+              presentation. Responsive Design: Optimized for optimal viewing on
+              desktops, tablets, and mobile phones, the website adapts to any
+              screen size for a smooth user experience on all devices.
+            </p>
+            <a
+              href="https://github.com/parazeeknova/AI-Club-Website"
+              class="btn btn-primary m-2 opacity-50"
+              >Github Repo ↺</a
+            >
+            <a
+              href="https://parazeeknova.github.io/AI-Club-Website"
+              class="btn btn-primary m-2 opacity-50"
+              >Website ↗</a
+            >
+            <a href="#projects" class="btn btn-primary m-2 opacity-50"
+              >More Info ↥</a
+            >
+          </div>
+          <div class="card-footer">
+            <h6 class="text-body-secondary">
+              <strong>Built with: </strong>
+              <div class="d-flex gap-2 justify-content-center py-2 opacity-75">
+                <div class="row row-cols-auto">
                   <span
-                    class="demo-material-label swiper-material-animate-opacity"
-                    >Nyxtext Flavours</span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
                   >
+                    <i
+                      class="fa-brands fa-html5 rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >HTML
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-brands fa-css3-alt rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >CSS
+                  </span>
+                </div>
+              </div>
+            </h6>
+            <small class="text-body-secondary"
+              >Last updated 1 months ago | Complete | Static frontend</small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div
+            id="Linuxdotfiles"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#Linuxdotfiles"
+                data-bs-slide-to="0"
+                class="active opacity-50"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#Linuxdotfiles"
+                data-bs-slide-to="1"
+                class="opacity-50"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#Linuxdotfiles"
+                data-bs-slide-to="2"
+                class="opacity-50"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="resources/Projects/Pistachio/Rice.png"
+                  class="d-block w-100"
+                  alt="Complete Rice"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Complete Rice</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="resources/Projects/Pistachio/terminal.png"
+                  class="d-block w-100"
+                  alt="Terminal view"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Terminal View</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="resources/Projects/Pistachio/rofi.png"
+                  class="d-block w-100"
+                  alt="Rofi Preview"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Rofi / Application Launcher</h5>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="swiper-material-wrapper">
-                <div class="swiper-material-content">
-                  <img
-                    class="demo-material-image"
-                    data-swiper-material-scale="1.25"
-                    src="resources/Projects/AI-club-web/highm.png"
-                  />
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#Linuxdotfiles"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#Linuxdotfiles"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">
+              Pistachio: Dotfiles for Arch Linux (Openboxwm)
+            </h5>
+            <p class="card-text">
+              Linux configuration,Featured on Reddit with over 1.1k upvotes,
+              Designed for Arch Linux (Archcraft) and built around the Openbox
+              window manager, this setup prioritizes clarity above all else.
+              Experience a breathtaking "glass" theme that blurs your
+              applications, including the Rofi launcher, terminal, and even the
+              Openbox interface itself. But don't be fooled by the aesthetics –
+              functionality reigns supreme. Informative Polybars grace the top
+              and bottom of your screen, displaying real-time system information
+              without a hint of performance lag. This open-source powerhouse
+              leverages various projects to craft a truly unique and optimized
+              user experience.
+            </p>
+            <a
+              href="https://github.com/parazeeknova/pistachio-V2-dotfiles"
+              class="btn btn-primary m-2 opacity-50"
+              >Github Repo ↺</a
+            >
+            <a href="#projects" class="btn btn-primary m-2 opacity-50"
+              >More Info ↥</a
+            >
+          </div>
+          <div class="card-footer">
+            <h6 class="text-body-secondary">
+              <strong
+                >Uses: Arch Linux, X11 window manager - Openbox, sddm, polybar,
+                rofi, conky, Picom</strong
+              >
+            </h6>
+            <small class="text-body-secondary"
+              >Last updated 1 year ago | depreciated | Linux dot files</small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="resources/Projects/myfolio/homepage.png"
+            class="card-img-top"
+            alt="Homepage"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Landing / Portfolio Page (CURRENT)</h5>
+            <p class="card-text">
+              This interactive portfolio website serves as a professional
+              introduction to my skills and experience. Built with HTML, Sass,
+              Bootstrap, and Javascript, the site showcases my completed
+              projects while highlighting my current capabilities in web
+              development. It boasts a user-friendly interface with customizable
+              themes (accessible via the "Change Background" button) and
+              incorporates subtle animations to enhance the user experience.
+              Responsive across all devices, the website ensures a seamless
+              experience for all visitors, regardless of their screen size.
+            </p>
+            <a
+              href="https://github.com/parazeeknova/Myfolio"
+              class="btn btn-primary m-2 opacity-50"
+              >Github Repo ↺</a
+            >
+            <a
+              href="https://parazeeknova.github.io/Myfolio/"
+              class="btn btn-primary m-2 opacity-50"
+              >Website ↗</a
+            >
+            <a href="#projects" class="btn btn-primary m-2 opacity-50"
+              >More Info ↥</a
+            >
+          </div>
+          <div class="card-footer">
+            <h6 class="text-body-secondary">
+              <strong>Built with: </strong>
+              <div class="d-flex gap-2 justify-content-center py-2 opacity-75">
+                <div class="row row-cols-auto">
                   <span
-                    class="demo-material-label swiper-material-animate-opacity"
-                    >AI Clubs Website</span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
                   >
+                    <i
+                      class="fa-brands fa-html5 rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >HTML
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-brands fa-css3-alt rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >CSS
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-brands fa-sass rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >SASS (mainly scss)
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-brands fa-bootstrap rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Bootstrap
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-brands fa-js rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Javascript
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-solid fa-scroll rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Jquery
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-solid fa-tape rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Formspree
+                  </span>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-material-wrapper">
-                <div class="swiper-material-content">
-                  <img
-                    class="demo-material-image"
-                    data-swiper-material-scale="1.25"
-                    src="resources/Projects/Pistachio/Rice.png"
-                  />
-                  <span
-                    class="demo-material-label swiper-material-animate-opacity"
-                    >Dotfiles</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-material-wrapper">
-                <div class="swiper-material-content">
-                  <img
-                    class="demo-material-image"
-                    data-swiper-material-scale="1.25"
-                    src="resources/Projects/Pistachio/rofi.png"
-                  />
-                  <span
-                    class="demo-material-label swiper-material-animate-opacity"
-                    >Rofi</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-material-wrapper">
-                <div class="swiper-material-content">
-                  <img
-                    class="demo-material-image"
-                    data-swiper-material-scale="1.25"
-                    src="resources/Projects/Pistachio/terminal.png"
-                  />
-                  <span
-                    class="demo-material-label swiper-material-animate-opacity"
-                    >Terminal</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-material-wrapper">
-                <div class="swiper-material-content">
-                  <img
-                    class="demo-material-image"
-                    data-swiper-material-scale="1.25"
-                    src="resources/Projects/homepagebasicII.png"
-                  />
-                  <span
-                    class="demo-material-label swiper-material-animate-opacity"
-                    >Portfolio</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-material-wrapper">
-                <div class="swiper-material-content">
-                  <img
-                    class="demo-material-image"
-                    data-swiper-material-scale="1.25"
-                    src="resources/Projects/hompagev2.png"
-                  />
-                  <span
-                    class="demo-material-label swiper-material-animate-opacity"
-                    >Portfolio alt</span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-material-wrapper">
-                <div class="swiper-material-content">
-                  <img
-                    class="demo-material-image"
-                    data-swiper-material-scale="1.25"
-                    src="resources/Projects/Operationsmile/osw.png"
-                  />
-                  <span
-                    class="demo-material-label swiper-material-animate-opacity"
-                    >Operation Smile</span
-                  >
-                </div>
-              </div>
-            </div>
+            </h6>
+            <small class="text-body-secondary"
+              >Last updated 1 day ago | In-Transit | semi-static frontend</small
+            >
           </div>
         </div>
       </div>
@@ -1118,7 +1533,7 @@
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
-              background-image: url('resources/Projects/Operationsmile/osw.png');
+              background-image: url(&quot;resources/Projects/Operationsmile/osw.png&quot;);
             "
           >
             <div
@@ -1641,7 +2056,6 @@
       </footer>
     </div>
 
-    <script src="app/js/materialslider.js"></script>
     <script src="app/js/script.js"></script>
     <script src="dist/js/bootstrap.bundle.js"></script>
     <script src="app/js/popovers.js"></script>
