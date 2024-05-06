@@ -1,0 +1,78 @@
+.bg-custom {
+  background-image: url("../../resources/background/pcatraingreen.gif");
+  background-size: cover;
+  backdrop-filter: blur(15px);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  border: none;
+  width: 9em;
+  height: 3em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1c1a1c;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.btnII {
+  border: none;
+  width: 16em;
+  height: 4em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.sparkle {
+  fill: #aaaaaa;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #aaaaaa;
+  font-size: medium;
+}
+
+.btn:hover {
+  background: linear-gradient(0deg, #415f54, #82b3a2);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 70px 0px #77a391;
+  transform: translateY(-2px);
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btnII:hover .text {
+  color: white;
+  transition: all 800ms ease;
+  transform: scale(1.1);
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+}
+
+.btnII:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+}
+
+.small-margin {
+  margin: 0.1em 0;
+}
