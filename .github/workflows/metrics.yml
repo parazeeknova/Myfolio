@@ -47,7 +47,7 @@ jobs:
           plugin_followup_sections: repositories
           plugin_habits: yes
           plugin_habits_charts: yes
-          plugin_habits_charts_type: graph
+          plugin_habits_charts_type: classic
           plugin_habits_days: 14
           plugin_habits_facts: yes
           plugin_habits_from: 200
@@ -77,11 +77,6 @@ jobs:
           plugin_repositories: yes
           plugin_repositories_featured: nyxtext, Myfolio
           plugin_repositories_order: featured, pinned, starred, random
-          plugin_stargazers: yes
-          plugin_stargazers_charts: yes
-          plugin_stargazers_charts_type: graph
-          plugin_stargazers_days: 14
-          plugin_stargazers_worldmap_sample: 0
           plugin_stars: yes
           plugin_stars_limit: 2
           plugin_traffic: yes
