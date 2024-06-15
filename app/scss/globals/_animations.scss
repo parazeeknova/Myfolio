@@ -50,3 +50,19 @@
     opacity: 1;
   }
 }
+
+#glow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  transition: background 0.5s, box-shadow 0.5s;
+}
+
+#glow.glow-more {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 69px 69px rgba(255, 255, 255, 0.42);
+}
