@@ -1,75 +1,75 @@
-$('.toast').on('show.bs.toast', function () {
-  document.getElementById('toastAudio').play()
-})
+$(".toast").on("show.bs.toast", function () {
+  document.getElementById("toastAudio").play();
+});
 
-document.getElementById('scrollToTop').addEventListener('click', function () {
-  document.getElementById('whooshAudio').play()
-})
+document.getElementById("scrollToTop").addEventListener("click", function () {
+  document.getElementById("whooshAudio").play();
+});
 
 $(document).ready(function () {
-  $('#scrollToTop').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 800)
-    return false
-  })
+  $("#scrollToTop").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 800);
+    return false;
+  });
 
-  $('a.nav-link').click(function (event) {
-    const href = $(this).attr('href')
-    if (href.startsWith('#')) {
-      event.preventDefault()
-      $('html, body').animate(
+  $("a.nav-link").click(function (event) {
+    const href = $(this).attr("href");
+    if (href.startsWith("#")) {
+      event.preventDefault();
+      $("html, body").animate(
         {
-          scrollTop: $(href).offset().top
+          scrollTop: $(href).offset().top,
         },
-        500
-      )
+        500,
+      );
     }
-  })
+  });
 
-  $('a').on('click', function (event) {
-    if (this.hash !== '') {
-      event.preventDefault()
-      const hash = this.hash
-      $('html, body').animate(
+  $("a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      const hash = this.hash;
+      $("html, body").animate(
         {
-          scrollTop: $(hash).offset().top
+          scrollTop: $(hash).offset().top,
         },
         800,
         function () {
-          window.location.hash = hash
-        }
-      )
+          window.location.hash = hash;
+        },
+      );
     }
-  })
+  });
 
-  $('a:not(.nav-link)').attr('target', '_blank')
+  $("a:not(.nav-link)").attr("target", "_blank");
 
-  ScrollReveal().reveal('.fade-in', {
-    distance: '60px',
+  ScrollReveal().reveal(".fade-in", {
+    distance: "60px",
     duration: 1000,
     delay: 0,
     opacity: 0,
     interval: 100,
     viewFactor: 0.2,
-    reset: true
-  })
+    reset: true,
+  });
 
-  window.addEventListener('scroll', function () {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+  window.addEventListener("scroll", function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const docHeight =
       document.documentElement.scrollHeight -
-      document.documentElement.clientHeight
-    const progress = (scrollTop / docHeight) * 100
-    document.getElementById('progress-bar').style.height = progress + '%'
-  })
-})
+      document.documentElement.clientHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    document.getElementById("progress-bar").style.height = progress + "%";
+  });
+});
 
-$('a.nav-link[href="pages/project.html"]').on('click', function (e) {
-  e.preventDefault()
-  const url = this.href
-  $('body').addClass('fade-out')
+$('a.nav-link[href="pages/project.html"]').on("click", function (e) {
+  e.preventDefault();
+  const url = this.href;
+  $("body").addClass("fade-out");
   setTimeout(function () {
-    window.location = url
-  }, 500)
-})
+    window.location = url;
+  }, 500);
+});
 
-$('body').scrollspy({ target: '#resume' })
+$("body").scrollspy({ target: "#resume" });
