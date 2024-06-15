@@ -1,76 +1,76 @@
 // Bubble Animation:
 function splitTextIntoSpans(target) {
-  const elements = document.querySelectorAll(target)
+  const elements = document.querySelectorAll(target);
   elements.forEach((element) => {
-    element.classList.add('split-text')
-    const text = element.innerText
+    element.classList.add("split-text");
+    const text = element.innerText;
     const splitText = text
-      .split(' ')
+      .split(" ")
       .map(function (word) {
         const char = word
-          .split('')
+          .split("")
           .map((char) => {
-            return `<span class="split-char">${char}</span>`
+            return `<span class="split-char">${char}</span>`;
           })
-          .join('')
-        return `<div class="split-word">${char}&nbsp</div>`
+          .join("");
+        return `<div class="split-word">${char}&nbsp</div>`;
       })
-      .join('')
+      .join("");
 
-    element.innerHTML = splitText
-  })
+    element.innerHTML = splitText;
+  });
 }
 
-splitTextIntoSpans('.bubble-text')
+splitTextIntoSpans(".bubble-text");
 
 function createToast(elementId, delay) {
-  const toastEl = document.getElementById(elementId)
+  const toastEl = document.getElementById(elementId);
   const toast = new bootstrap.Toast(toastEl, {
-    delay: delay,
-    autohide: true
-  })
-  toast.show()
+    delay,
+    autohide: true,
+  });
+  toast.show();
 }
 
-document.addEventListener('DOMContentLoaded', (event) => {
-  createToast('welcomeToast', 6000)
-})
+document.addEventListener("DOMContentLoaded", (event) => {
+  createToast("welcomeToast", 6000);
+});
 
-document.getElementById('devPhoto').addEventListener('click', (event) => {
-  createToast('photoToast', 6000)
-})
+document.getElementById("devPhoto").addEventListener("click", (event) => {
+  createToast("photoToast", 6000);
+});
 
-document.getElementById('whatsNew').addEventListener('click', (event) => {
-  createToast('whatsNewToast', 12000)
-})
+document.getElementById("whatsNew").addEventListener("click", (event) => {
+  createToast("whatsNewToast", 12000);
+});
 
-document.getElementById('pedro').addEventListener('click', function () {
-  const video = document.getElementById('myVideo')
-  video.style.display = 'block'
-  video.play()
-})
+document.getElementById("pedro").addEventListener("click", function () {
+  const video = document.getElementById("myVideo");
+  video.style.display = "block";
+  video.play();
+});
 
-const video = document.getElementById('myVideo')
+const video = document.getElementById("myVideo");
 
-video.addEventListener('pause', function () {
-  video.style.display = 'none'
-})
+video.addEventListener("pause", function () {
+  video.style.display = "none";
+});
 
 const backgrounds = [
-  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/sppokII.gif?raw=true',
-  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/Neko.gif?raw=true',
-  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/space.gif?raw=true',
-  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/redswan.gif?raw=true',
-  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/tired.gif?raw=true',
-  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/vrain.gif?raw=true',
-  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/neir.gif?raw=true'
-]
-let currentBackgroundIndex = 0
+  "https://github.com/parazeeknova/Myfolio/blob/main/resources/background/sppokII.gif?raw=true",
+  "https://github.com/parazeeknova/Myfolio/blob/main/resources/background/Neko.gif?raw=true",
+  "https://github.com/parazeeknova/Myfolio/blob/main/resources/background/space.gif?raw=true",
+  "https://github.com/parazeeknova/Myfolio/blob/main/resources/background/redswan.gif?raw=true",
+  "https://github.com/parazeeknova/Myfolio/blob/main/resources/background/tired.gif?raw=true",
+  "https://github.com/parazeeknova/Myfolio/blob/main/resources/background/vrain.gif?raw=true",
+  "https://github.com/parazeeknova/Myfolio/blob/main/resources/background/neir.gif?raw=true",
+];
+let currentBackgroundIndex = 0;
 
 document
-  .getElementById('changeBackgroundButton')
-  .addEventListener('click', (event) => {
-    currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length
-    document.querySelector('.bg-custom').style.backgroundImage =
-      "url('" + backgrounds[currentBackgroundIndex] + "')"
-  })
+  .getElementById("changeBackgroundButton")
+  .addEventListener("click", (event) => {
+    currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+    document.querySelector(".bg-custom").style.backgroundImage =
+      "url('" + backgrounds[currentBackgroundIndex] + "')";
+  });
