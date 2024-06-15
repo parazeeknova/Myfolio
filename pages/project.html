@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects</title>
-  <script type="module" crossorigin src="app/js/asset.js"></script>
-  <link rel="modulepreload" href="app/js/vendor.js">
-  <link rel="stylesheet" href="app/css/project.css">
-  <link rel="icon" href="resources/logo/hashcodes-favicon.svg" />
-  <link rel="stylesheet" href="dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="app/css/pstyles.css" />
+  <script type="module" crossorigin src="../app/js/asset.js"></script>
+  <link rel="modulepreload" href="../app/js/vendor.js">
+  <link rel="stylesheet" href="../app/css/project.css">
+  <link rel="icon" href="../resources/logo/hashcodes-favicon.svg" />
+  <link rel="stylesheet" href="../dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../app/css/pstyles.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -22,7 +22,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#home">
           <img
-            src="resources/logo/logo-white.svg"
+            src="../resources/logo/logo-white.svg"
             alt="HashCodes Logo"
             width="120"
             class="d-inline-block align-text-top"
@@ -41,7 +41,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav opacity-75 ms-auto">
-            <a class="nav-link" href="index.html"
+            <a class="nav-link" href="../index.html"
               >About</a
             >
             <a class="nav-link active" aria-current="page"  href="project.html">Projects</a>
@@ -61,7 +61,7 @@
               aria-expanded="false"
             >
               <img
-                src="resources/dev/dev.jpg"
+                src="../resources/dev/dev.jpg"
                 alt="Mini dev's photo"
                 id="devPhotomini"
                 width="32"
@@ -83,63 +83,42 @@
     </nav>
 
   <div id="app">
-    <!-- Fashion slider container -->
     <div class="fashion-slider">
       <div class="swiper">
         <div class="swiper-wrapper">
-          <!-- configure slide color with "data-slide-bg-color" attribute -->
-          <div class="swiper-slide" data-slide-bg-color="#D7A594">
-            <!-- slide title wrap -->
-            <div class="fashion-slider-title" data-swiper-parallax="-130%">
-              <!-- slide title text -->
-              <div class="fashion-slider-title-text">Dotfiles</div>
-            </div>
-            <!-- slide image wrap -->
-            <div class="fashion-slider-scale">
-              <!-- slide image -->
-              <img src="resources/Projects/Pistachio/Rice.png" alt="archlinux dotfiles">
-            </div>
-          </div>
-          <!-- configure slide color with "data-slide-bg-color" attribute -->
-          <div class="swiper-slide" data-slide-bg-color="#a9868f">
-            <!-- slide title wrap -->
-            <div class="fashion-slider-title" data-swiper-parallax="-130%">
-              <!-- slide title text -->
-              <div class="fashion-slider-title-text">AI Club's Website</div>
-            </div>
-            <!-- slide image wrap -->
-            <div class="fashion-slider-scale">
-              <!-- slide image -->
-              <img src="resources/Projects/AI-club-web/highm.png" alt="mobile view ai">
-            </div>
-          </div>
-          <!-- configure slide color with "data-slide-bg-color" attribute -->
           <div class="swiper-slide" data-slide-bg-color="#51576d">
-            <!-- slide title wrap -->
             <div class="fashion-slider-title" data-swiper-parallax="-130%">
-              <!-- slide title text -->
               <div class="fashion-slider-title-text">NyxText</div>
             </div>
-            <!-- slide image wrap -->
             <div class="fashion-slider-scale">
-              <!-- slide image -->
-              <img src="resources/Projects/NyxText/Catppuccin_color_scheme.png" alt="nyxtext">
+              <img src="../resources/Projects/NyxText/Catppuccin_color_scheme.png" alt="nyxtext">
+            </div>
+          </div>
+          <div class="swiper-slide" data-slide-bg-color="#D7A594">
+            <div class="fashion-slider-title" data-swiper-parallax="-130%">
+              <div class="fashion-slider-title-text">Dotfiles</div>
+            </div>
+            <div class="fashion-slider-scale">
+              <img src="../resources/Projects/Pistachio/Rice.png" alt="archlinux dotfiles">
+            </div>
+          </div>
+          <div class="swiper-slide" data-slide-bg-color="#a9868f">
+            <div class="fashion-slider-title" data-swiper-parallax="-130%">
+              <div class="fashion-slider-title-text">AI Club's Website</div>
+            </div>
+            <div class="fashion-slider-scale">
+              <img src="../resources/Projects/AI-club-web/highm.png" alt="mobile view ai">
             </div>
           </div>
           <div class="swiper-slide" data-slide-bg-color="#808f80">
-            <!-- slide title wrap -->
             <div class="fashion-slider-title" data-swiper-parallax="-130%">
-              <!-- slide title text -->
               <div class="fashion-slider-title-text">Portfolio</div>
             </div>
-            <!-- slide image wrap -->
             <div class="fashion-slider-scale">
-              <!-- slide image -->
-              <img src="resources/Projects/homepagebasicII.png" alt="portfolio preview">
+              <img src="../resources/Projects/homepagebasicII.png" alt="portfolio preview">
             </div>
           </div>
         </div>
-        <!-- right/next navigation button -->
         <div class="fashion-slider-button-prev fashion-slider-button">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 350 160 90">
             <g class="fashion-slider-svg-wrap">
@@ -152,7 +131,6 @@
             </g>
           </svg>
         </div>
-        <!-- left/previous navigation button -->
         <div class="fashion-slider-button-next fashion-slider-button">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 350 160 90">
             <g class="fashion-slider-svg-wrap">
@@ -206,7 +184,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="resources/Projects/NyxText/Catppuccin_color_scheme.png"
+                  src="../resources/Projects/NyxText/Catppuccin_color_scheme.png"
                   class="d-block w-100"
                   alt="catppuccin color scheme"
                 />
@@ -216,7 +194,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="resources/Projects/NyxText/flavours.png"
+                  src="../resources/Projects/NyxText/flavours.png"
                   class="d-block w-100"
                   alt="flavours of nyxtext"
                 />
@@ -226,7 +204,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="resources/Projects/NyxText/terminal.png"
+                  src="../resources/Projects/NyxText/terminal.png"
                   class="d-block w-100"
                   alt="terminal support"
                 />
@@ -378,7 +356,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="resources/Projects/AI-club-web/homepage.png"
+                  src="../resources/Projects/AI-club-web/homepage.png"
                   class="d-block w-100"
                   alt="Homepage for AI club"
                 />
@@ -388,7 +366,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="resources/Projects/AI-club-web/scroll.png"
+                  src="../resources/Projects/AI-club-web/scroll.png"
                   class="d-block w-100"
                   alt="Footer"
                 />
@@ -398,7 +376,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="resources/Projects/AI-club-web/highm.png"
+                  src="../resources/Projects/AI-club-web/highm.png"
                   class="d-block w-100"
                   alt="Mobile View"
                 />
@@ -526,7 +504,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="resources/Projects/Pistachio/Rice.png"
+                  src="../resources/Projects/Pistachio/Rice.png"
                   class="d-block w-100"
                   alt="Complete Rice"
                 />
@@ -536,7 +514,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="resources/Projects/Pistachio/terminal.png"
+                  src="../resources/Projects/Pistachio/terminal.png"
                   class="d-block w-100"
                   alt="Terminal view"
                 />
@@ -546,7 +524,7 @@
               </div>
               <div class="carousel-item">
                 <img
-                  src="resources/Projects/Pistachio/rofi.png"
+                  src="../resources/Projects/Pistachio/rofi.png"
                   class="d-block w-100"
                   alt="Rofi Preview"
                 />
@@ -623,7 +601,7 @@
       <div class="col">
         <div class="card">
           <img
-            src="resources/Projects/myfolio/homepage.png"
+            src="../resources/Projects/myfolio/homepage.png"
             class="card-img-top"
             alt="Homepage"
           />
@@ -745,7 +723,7 @@
           >
             <img
               class="d-inline-block img-fluid px-2"
-              src="resources/logo/logo-white.svg"
+              src="../resources/logo/logo-white.svg"
               alt="Logo"
               width="380"
             />
@@ -1005,10 +983,10 @@
           </ul>
         </div>
     </footer>
-    <script src="app/js/script.js"></script>
-    <script src="dist/js/bootstrap.bundle.js"></script>
-    <script src="app/js/popovers.js"></script>
-    <script src="app/js/main.js"></script>
+    <script src="../app/js/script.js"></script>
+    <script src="../dist/js/bootstrap.bundle.js"></script>
+    <script src="../app/js/popovers.js"></script>
+    <script src="../app/js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/95f1b7c81c.js"
       crossorigin="anonymous"

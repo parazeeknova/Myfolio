@@ -63,7 +63,7 @@ $(document).ready(function () {
   })
 })
 
-$('a.nav-link').on('click', function (e) {
+$('a.nav-link[href="pages/project.html"]').on('click', function (e) {
   e.preventDefault()
   const url = this.href
   $('body').addClass('fade-out')
@@ -71,3 +71,5 @@ $('a.nav-link').on('click', function (e) {
     window.location = url
   }, 500)
 })
+
+$('body').scrollspy({ target: '#resume' })

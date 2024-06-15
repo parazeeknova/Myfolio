@@ -1,5 +1,5 @@
 // Bubble Animation:
-function splitTextIntoSpans (target) {
+function splitTextIntoSpans(target) {
   const elements = document.querySelectorAll(target)
   elements.forEach((element) => {
     element.classList.add('split-text')
@@ -23,40 +23,25 @@ function splitTextIntoSpans (target) {
 
 splitTextIntoSpans('.bubble-text')
 
-document.addEventListener('DOMContentLoaded', (event) => {
-  const toastEl = document.getElementById('welcomeToast')
+function createToast(elementId, delay) {
+  const toastEl = document.getElementById(elementId)
   const toast = new bootstrap.Toast(toastEl, {
-    delay: 6000,
+    delay: delay,
     autohide: true
   })
   toast.show()
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  createToast('welcomeToast', 6000)
 })
 
 document.getElementById('devPhoto').addEventListener('click', (event) => {
-  const toastEl = document.getElementById('photoToast')
-  const toast = new bootstrap.Toast(toastEl, {
-    delay: 6000,
-    autohide: true
-  })
-  toast.show()
-})
-
-document.getElementById('devPhotomini').addEventListener('click', (event) => {
-  const toastEl = document.getElementById('trollToast')
-  const toast = new bootstrap.Toast(toastEl, {
-    delay: 6000,
-    autohide: true
-  })
-  toast.show()
+  createToast('photoToast', 6000)
 })
 
 document.getElementById('whatsNew').addEventListener('click', (event) => {
-  const toastEl = document.getElementById('whatsNewToast')
-  const toast = new bootstrap.Toast(toastEl, {
-    delay: 12000,
-    autohide: true
-  })
-  toast.show()
+  createToast('whatsNewToast', 12000)
 })
 
 document.getElementById('pedro').addEventListener('click', function () {
@@ -75,8 +60,10 @@ const backgrounds = [
   'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/sppokII.gif?raw=true',
   'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/Neko.gif?raw=true',
   'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/space.gif?raw=true',
-  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/plane.gif?raw=true',
-  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/rain.gif?raw=true'
+  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/redswan.gif?raw=true',
+  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/tired.gif?raw=true',
+  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/vrain.gif?raw=true',
+  'https://github.com/parazeeknova/Myfolio/blob/main/resources/background/neir.gif?raw=true'
 ]
 let currentBackgroundIndex = 0
 
