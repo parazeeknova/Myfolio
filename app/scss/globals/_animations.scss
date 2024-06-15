@@ -59,7 +59,9 @@
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.2);
   pointer-events: none;
-  transition: background 0.5s, box-shadow 0.5s;
+  transition:
+    background 0.5s,
+    box-shadow 0.5s;
 }
 
 #glow.glow-more {

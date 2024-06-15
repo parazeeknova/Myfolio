@@ -62,7 +62,7 @@ const backgrounds = [
   "https://github.com/parazeeknova/Myfolio/blob/main/resources/background/space.gif?raw=true",
   "https://github.com/parazeeknova/Myfolio/blob/main/resources/background/redswan.gif?raw=true",
   "https://github.com/parazeeknova/Myfolio/blob/main/resources/background/tired.gif?raw=true",
-  "https://github.com/parazeeknova/Myfolio/blob/main/resources/background/vrain.gif?raw=true"
+  "https://github.com/parazeeknova/Myfolio/blob/main/resources/background/vrain.gif?raw=true",
 ];
 let currentBackgroundIndex = 0;
 

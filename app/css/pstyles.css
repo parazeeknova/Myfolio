@@ -47,9 +47,11 @@
 
 .btn:hover {
   background: linear-gradient(0deg, #415f54, #82b3a2);
-  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  box-shadow:
+    inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 70px 0px #77a391;
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 70px 0px #77a391;
   transform: translateY(-2px);
 }
 

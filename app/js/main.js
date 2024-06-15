@@ -63,7 +63,7 @@ $(document).ready(function () {
   });
 });
 
-$('a.nav-link').on("click", function (e) {
+$("a.nav-link").on("click", function (e) {
   e.preventDefault();
   const url = this.href;
   $("body").addClass("fade-out");
@@ -72,18 +72,18 @@ $('a.nav-link').on("click", function (e) {
   }, 500);
 });
 
-document.addEventListener('mousemove', function (e) {
-  const glow = document.getElementById('glow');
-  glow.style.left = e.pageX - 10 + 'px';
-  glow.style.top = e.pageY - 10 + 'px';
+document.addEventListener("mousemove", function (e) {
+  const glow = document.getElementById("glow");
+  glow.style.left = e.pageX - 10 + "px";
+  glow.style.top = e.pageY - 10 + "px";
 });
 
 const interactables = document.querySelectorAll('button, a, [role="button"]');
 interactables.forEach(function (interactable) {
-  interactable.addEventListener('mouseover', function () {
-    document.getElementById('glow').classList.add('glow-more');
+  interactable.addEventListener("mouseover", function () {
+    document.getElementById("glow").classList.add("glow-more");
   });
-  interactable.addEventListener('mouseout', function () {
-    document.getElementById('glow').classList.remove('glow-more');
+  interactable.addEventListener("mouseout", function () {
+    document.getElementById("glow").classList.remove("glow-more");
   });
 });
