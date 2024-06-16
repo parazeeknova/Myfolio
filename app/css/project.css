@@ -3,6 +3,22 @@ body {
   animation: fadeIn 0.5s forwards;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #5d856d;
+}
+
 @keyframes fadeIn {
   100% {
     opacity: 1;
@@ -484,15 +500,8 @@ body {
 body {
   color: #fff;
   line-height: 1.5;
-  font-family:
-    -apple-system,
-    system-ui,
-    Helvetica Neue,
-    Helvetica,
-    Arial,
-    Segoe UI,
-    Roboto,
-    sans-serif;
+  font-family: -apple-system, system-ui, Helvetica Neue, Helvetica, Arial,
+    Segoe UI, Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
