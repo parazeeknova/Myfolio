@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Section</title>
+    <script type="module" crossorigin src="../app/js/asset.js"></script>
+    <link rel="modulepreload" href="../app/js/vendor.js" />
+    <link rel="stylesheet" href="../app/css/project.css" />
+    <link rel="icon" href="../resources/logo/hashcodes-favicon.svg" />
+    <link rel="stylesheet" href="../dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../app/css/pstyles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Section</title>
-  <script type="module" crossorigin src="../app/js/asset.js"></script>
-  <link rel="modulepreload" href="../app/js/vendor.js">
-  <link rel="stylesheet" href="../app/css/project.css">
-  <link rel="icon" href="../resources/logo/hashcodes-favicon.svg" />
-  <link rel="stylesheet" href="../dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="../app/css/pstyles.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-
-<body class="bg-custom">
-  <nav
+  <body class="bg-custom" data-bs-smooth-scroll="true">
+    <nav
       class="navbar navbar-expand-md bg-body-tertiary ms-sm-auto opacity-75 shadow border-bottom border-dark-subtle"
     >
       <div class="container-fluid">
@@ -40,10 +39,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav opacity-75 ms-auto">
-            <a class="nav-link" href="../index.html"
-              >Home</a
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="project.html"
+              >Projects</a
             >
-            <a class="nav-link active" aria-current="page"  href="project.html">Projects</a>
             <a class="nav-link" href="../pages/work.html">Work</a>
             <a class="nav-link" href="../pages/resume.html">Resume</a>
             <a class="nav-link" href="../index.html/#aboutsection">About</a>
@@ -52,72 +51,88 @@
       </div>
     </nav>
 
-  <div id="app">
-    <div class="fashion-slider">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" data-slide-bg-color="#51576d">
-            <div class="fashion-slider-title" data-swiper-parallax="-130%">
-              <div class="fashion-slider-title-text">NyxText</div>
+    <div id="app">
+      <div class="fashion-slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-slide-bg-color="#51576d">
+              <div class="fashion-slider-title" data-swiper-parallax="-130%">
+                <div class="fashion-slider-title-text">NyxText</div>
+              </div>
+              <div class="fashion-slider-scale">
+                <img
+                  src="../resources/Projects/NyxText/Catppuccin_color_scheme.png"
+                  alt="nyxtext"
+                />
+              </div>
             </div>
-            <div class="fashion-slider-scale">
-              <img src="../resources/Projects/NyxText/Catppuccin_color_scheme.png" alt="nyxtext">
+            <div class="swiper-slide" data-slide-bg-color="#D7A594">
+              <div class="fashion-slider-title" data-swiper-parallax="-130%">
+                <div class="fashion-slider-title-text">Dotfiles</div>
+              </div>
+              <div class="fashion-slider-scale">
+                <img
+                  src="../resources/Projects/Pistachio/Rice.png"
+                  alt="archlinux dotfiles"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg-color="#a9868f">
+              <div class="fashion-slider-title" data-swiper-parallax="-130%">
+                <div class="fashion-slider-title-text">AI Club's Website</div>
+              </div>
+              <div class="fashion-slider-scale">
+                <img
+                  src="../resources/Projects/AI-club-web/highm.png"
+                  alt="mobile view ai"
+                />
+              </div>
+            </div>
+            <div class="swiper-slide" data-slide-bg-color="#808f80">
+              <div class="fashion-slider-title" data-swiper-parallax="-130%">
+                <div class="fashion-slider-title-text">Portfolio</div>
+              </div>
+              <div class="fashion-slider-scale">
+                <img
+                  src="../resources/Projects/homepagebasicII.png"
+                  alt="portfolio preview"
+                />
+              </div>
             </div>
           </div>
-          <div class="swiper-slide" data-slide-bg-color="#D7A594">
-            <div class="fashion-slider-title" data-swiper-parallax="-130%">
-              <div class="fashion-slider-title-text">Dotfiles</div>
-            </div>
-            <div class="fashion-slider-scale">
-              <img src="../resources/Projects/Pistachio/Rice.png" alt="archlinux dotfiles">
-            </div>
-          </div>
-          <div class="swiper-slide" data-slide-bg-color="#a9868f">
-            <div class="fashion-slider-title" data-swiper-parallax="-130%">
-              <div class="fashion-slider-title-text">AI Club's Website</div>
-            </div>
-            <div class="fashion-slider-scale">
-              <img src="../resources/Projects/AI-club-web/highm.png" alt="mobile view ai">
-            </div>
-          </div>
-          <div class="swiper-slide" data-slide-bg-color="#808f80">
-            <div class="fashion-slider-title" data-swiper-parallax="-130%">
-              <div class="fashion-slider-title-text">Portfolio</div>
-            </div>
-            <div class="fashion-slider-scale">
-              <img src="../resources/Projects/homepagebasicII.png" alt="portfolio preview">
-            </div>
-          </div>
-        </div>
-        <div class="fashion-slider-button-prev fashion-slider-button">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 350 160 90">
-            <g class="fashion-slider-svg-wrap">
-              <g class="fashion-slider-svg-circle-wrap">
-                <circle cx="42" cy="42" r="40"></circle>
+          <div class="fashion-slider-button-prev fashion-slider-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 350 160 90">
+              <g class="fashion-slider-svg-wrap">
+                <g class="fashion-slider-svg-circle-wrap">
+                  <circle cx="42" cy="42" r="40"></circle>
+                </g>
+                <path
+                  class="fashion-slider-svg-arrow"
+                  d="M.983,6.929,4.447,3.464.983,0,0,.983,2.482,3.464,0,5.946Z"
+                ></path>
+                <path class="fashion-slider-svg-line" d="M80,0H0"></path>
               </g>
-              <path class="fashion-slider-svg-arrow" d="M.983,6.929,4.447,3.464.983,0,0,.983,2.482,3.464,0,5.946Z">
-              </path>
-              <path class="fashion-slider-svg-line" d="M80,0H0"></path>
-            </g>
-          </svg>
-        </div>
-        <div class="fashion-slider-button-next fashion-slider-button">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 350 160 90">
-            <g class="fashion-slider-svg-wrap">
-              <g class="fashion-slider-svg-circle-wrap">
-                <circle cx="42" cy="42" r="40"></circle>
+            </svg>
+          </div>
+          <div class="fashion-slider-button-next fashion-slider-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 350 160 90">
+              <g class="fashion-slider-svg-wrap">
+                <g class="fashion-slider-svg-circle-wrap">
+                  <circle cx="42" cy="42" r="40"></circle>
+                </g>
+                <path
+                  class="fashion-slider-svg-arrow"
+                  d="M.983,6.929,4.447,3.464.983,0,0,.983,2.482,3.464,0,5.946Z"
+                ></path>
+                <path class="fashion-slider-svg-line" d="M80,0H0"></path>
               </g>
-              <path class="fashion-slider-svg-arrow" d="M.983,6.929,4.447,3.464.983,0,0,.983,2.482,3.464,0,5.946Z">
-              </path>
-              <path class="fashion-slider-svg-line" d="M80,0H0"></path>
-            </g>
-          </svg>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div
+    <div
       class="row row-cols-1 row-cols-md-2 row-cols-xxl-4 m-4 g-4 opacity-75 fade-in"
     >
       <div class="col">
@@ -440,6 +455,129 @@
           </div>
         </div>
       </div>
+
+      <div class="col">
+        <div class="card">
+          <div
+            id="dotfiles-current"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#dotfiles-current"
+                data-bs-slide-to="0"
+                class="active opacity-50"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#dotfiles-current"
+                data-bs-slide-to="1"
+                class="opacity-50"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#dotfiles-current"
+                data-bs-slide-to="2"
+                class="opacity-50"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../resources/Projects/dotfiles-current/Rice.png"
+                  class="d-block w-100"
+                  alt="Dotfile preview"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Homepage</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../resources/Projects/dotfiles-current/vscode.png"
+                  class="d-block w-100"
+                  alt="Mobile View"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">VScode</h5>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#dotfiles-current"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#dotfiles-current"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">
+              Arch Workflow - i3wm, tmux, neovim & vscode
+            </h5>
+            <p class="card-text">
+              A minimalist Arch setup for a keyboard-centric distribution. The
+              workflow consists of i3wm, polybar, tmux, and neovim. The
+              configuration is designed to be lightweight and efficient, with
+              the goal of maximizing productivity. The setup is optimized for
+              speed and ease of use, with a focus on keyboard shortcuts and
+              automation. The dotfiles are highly customizable and can be
+              tailored to suit individual preferences. The workflow is ideal for
+              developers, sysadmins, and power users who value efficiency and
+              simplicity. The dotfiles are open-source and available on GitHub
+              for anyone to use or contribute to. The project is actively
+              maintained and updated regularly with new features and
+              improvements.
+            </p>
+            <a
+              href="https://github.com/parazeeknova/dotfiles"
+              class="btn btn-primary m-2 opacity-50"
+              >Github Repo ↺</a
+            >
+            <a
+              href="https://www.reddit.com/r/unixporn/comments/1dkfurz/i3_my_minimalist_uni_setup_neovim_tmux_for_a/"
+              class="btn btn-primary m-2 opacity-50"
+              >More Info ↥</a
+            >
+          </div>
+          <div class="card-footer">
+            <h6 class="text-body-secondary">
+              <strong
+                >Workflow consisting of i3wm, polybar, tmux and neovim for
+                keyboard centric distribution</strong
+              >
+            </h6>
+            <small class="text-body-secondary"
+              >Last updated 1 week ago | Complete | Dotfiles</small
+            >
+          </div>
+        </div>
+      </div>
+
       <div class="col">
         <div class="card">
           <div
@@ -568,6 +706,116 @@
           </div>
         </div>
       </div>
+
+      <div class="col">
+        <div class="card">
+          <div
+            id="dotfiles-current"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../resources/Projects/dotfiles-current/demo.png"
+                  class="d-block w-100"
+                  alt="Dotfile preview"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Homepage - ZaneyOS</h5>
+                </div>
+              </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#dotfiles-current"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#dotfiles-current"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">NixOS - Flakes,home-manager</h5>
+            <p class="card-text">
+              A work-in-progress project in the Nix programming language. It
+              configures my system using Nix flakes and home-manager, making it
+              reproducible on any NixOS system. The project automatically sets
+              up Hyprland WM, zsh, neovim, waybar, graphic drivers, and many
+              more. However, please note that it is currently incomplete and a
+              work in progress.
+            </p>
+            <a
+              href="https://github.com/parazeeknova/nix-config"
+              class="btn btn-primary m-2 opacity-50"
+              >Github Repo ↺</a
+            >
+            <a
+              href="https://gitlab.com/Zaney/zaneyos"
+              class="btn btn-primary m-2 opacity-50"
+              >More Info ↥</a
+            >
+          </div>
+          <div class="card-footer">
+            <h6 class="text-body-secondary">
+              <strong>Build with</strong>
+              <div class="d-flex gap-2 justify-content-center py-2 opacity-75">
+                <div class="row row-cols-auto">
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-regular fa-snowflake rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i>
+                    NIX
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-soild fa-house-user rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Home Manager
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-regular fa-snowflake rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >NixOS - Flakes
+                  </span>
+                </div>
+              </div>
+            </h6>
+            <small class="text-body-secondary"
+              >Last updated 1 day ago | Incomplete - WIP | System Configuration
+              - Flakes</small
+            >
+          </div>
+        </div>
+      </div>
+
       <div class="col">
         <div class="card">
           <img
@@ -681,7 +929,6 @@
       </div>
     </div>
 
-
     <div class="container-fluid bg-body-tertiary opacity-75">
       <footer
         class="row row-cols-3 row-cols-sm-3 row-cols-md-6 py-5 border-top"
@@ -724,7 +971,9 @@
           <h5>Links</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="../index.html" class="nav-link p-0 text-body-secondary">Home</a>
+              <a href="../index.html" class="nav-link p-0 text-body-secondary"
+                >Home</a
+              >
             </li>
             <li class="nav-item mb-2">
               <a href="project.html" class="nav-link p-0 text-body-secondary"
@@ -737,10 +986,14 @@
               >
             </li>
             <li class="nav-item mb-2">
-              <a href="work.html" class="nav-link p-0 text-body-secondary">FAQs</a>
+              <a href="work.html" class="nav-link p-0 text-body-secondary"
+                >FAQs</a
+              >
             </li>
             <li class="nav-item mb-2">
-              <a href="../index.html/#aboutsection" class="nav-link p-0 text-body-secondary"
+              <a
+                href="../index.html/#aboutsection"
+                class="nav-link p-0 text-body-secondary"
                 >About</a
               >
             </li>
@@ -784,23 +1037,17 @@
           <h5>Soon</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a
-                href="work.html"
-                class="nav-link p-0 text-body-secondary"
+              <a href="work.html" class="nav-link p-0 text-body-secondary"
                 >Blog</a
               >
             </li>
             <li class="nav-item mb-2">
-              <a
-                href="work.html"
-                class="nav-link p-0 text-body-secondary"
+              <a href="work.html" class="nav-link p-0 text-body-secondary"
                 >Hire</a
               >
             </li>
             <li class="nav-item mb-2">
-              <a
-                href="work.html"
-                class="nav-link p-0 text-body-secondary"
+              <a href="work.html" class="nav-link p-0 text-body-secondary"
                 >Freelance</a
               >
             </li>
@@ -971,14 +1218,15 @@
             </li>
           </ul>
         </div>
-    </footer>
-    <script src="../app/js/script.js"></script>
-    <script src="../dist/js/bootstrap.bundle.js"></script>
-    <script src="../app/js/popovers.js"></script>
-    <script src="../app/js/main.js"></script>
-    <script
-      src="https://kit.fontawesome.com/95f1b7c81c.js"
-      crossorigin="anonymous"
-    ></script>
-</body>
+      </footer>
+      <script src="../app/js/script.js"></script>
+      <script src="../dist/js/bootstrap.bundle.js"></script>
+      <script src="../app/js/popovers.js"></script>
+      <script src="../app/js/main.js"></script>
+      <script
+        src="https://kit.fontawesome.com/95f1b7c81c.js"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
 </html>
