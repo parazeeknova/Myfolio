@@ -22,6 +22,8 @@ Welcome to MyFolio! This website showcases my projects, skills, and experiences.
 
 > Currently in development and is months away from completion.
 
+![Alt](https://repobeats.axiom.co/api/embed/f9c5fd72d1d0308d35f0c8cee765cbc48ebd554d.svg "Repobeats analytics image")
+
 &nbsp;
 
 <div align="center">
