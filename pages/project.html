@@ -55,13 +55,24 @@
       <div class="fashion-slider">
         <div class="swiper">
           <div class="swiper-wrapper">
+            <div class="swiper-slide" data-slide-bg-color="#191724">
+              <div class="fashion-slider-title" data-swiper-parallax="-130%">
+                <div class="fashion-slider-title-text">Nyxtext Zenith</div>
+              </div>
+              <div class="fashion-slider-scale">
+                <img
+                  src="../resources/Projects/Nyxtext-Zenith/default.png"
+                  alt="nyxtext"
+                />
+              </div>
+            </div>
             <div class="swiper-slide" data-slide-bg-color="#51576d">
               <div class="fashion-slider-title" data-swiper-parallax="-130%">
                 <div class="fashion-slider-title-text">NyxText</div>
               </div>
               <div class="fashion-slider-scale">
                 <img
-                  src="../resources/Projects/NyxText/Catppuccin_color_scheme.png"
+                  src="../resources/Projects/NyxText/Homescreen.png"
                   alt="nyxtext"
                 />
               </div>
@@ -138,14 +149,14 @@
       <div class="col">
         <div class="card bg-body-tertiary shadow-sm">
           <div
-            id="NyxText"
+            id="NyxText-Zenith"
             class="carousel slide carousel-fade"
             data-bs-ride="carousel"
           >
             <div class="carousel-indicators">
               <button
                 type="button"
-                data-bs-target="#NyxText"
+                data-bs-target="#NyxText-Zenith"
                 data-bs-slide-to="0"
                 class="active opacity-50"
                 aria-current="true"
@@ -153,14 +164,14 @@
               ></button>
               <button
                 type="button"
-                data-bs-target="#NyxText"
+                data-bs-target="#NyxText-Zenith"
                 data-bs-slide-to="1"
                 class="opacity-50"
                 aria-label="Slide 2"
               ></button>
               <button
                 type="button"
-                data-bs-target="#NyxText"
+                data-bs-target="#NyxText-Zenith"
                 data-bs-slide-to="2"
                 class="opacity-50"
                 aria-label="Slide 3"
@@ -169,39 +180,39 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="../resources/Projects/NyxText/Catppuccin_color_scheme.png"
+                  src="../resources/Projects/Nyxtext-Zenith/default.png"
                   class="d-block w-100"
-                  alt="catppuccin color scheme"
+                  alt="Homescreen"
                 />
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-white-50">Catppuccin Color Scheme</h5>
+                  <h5 class="text-white-50">Homescreen</h5>
                 </div>
               </div>
               <div class="carousel-item">
                 <img
-                  src="../resources/Projects/NyxText/flavours.png"
+                  src="../resources/Projects/Nyxtext-Zenith/gruvbox.png"
                   class="d-block w-100"
-                  alt="flavours of nyxtext"
+                  alt="Alt Theme"
                 />
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-white-50">Different Color Schemes</h5>
+                  <h5 class="text-white-50">Alt Theme</h5>
                 </div>
               </div>
               <div class="carousel-item">
                 <img
-                  src="../resources/Projects/NyxText/terminal.png"
+                  src="../resources/Projects/Nyxtext-Zenith/docked_filetree.png"
                   class="d-block w-100"
-                  alt="terminal support"
+                  alt="docked_filetree"
                 />
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-white-50">Terminal Support</h5>
+                  <h5 class="text-white-50">Filetree Docked</h5>
                 </div>
               </div>
             </div>
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#NyxText"
+              data-bs-target="#NyxText-Zenith"
               data-bs-slide="prev"
             >
               <span
@@ -213,7 +224,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#NyxText"
+              data-bs-target="#NyxText-Zenith"
               data-bs-slide="next"
             >
               <span
@@ -225,35 +236,20 @@
           </div>
 
           <div class="card-body">
-            <h5 class="card-title">
-              NyxText: A Versatile Text Editor for Writers and Coders
-            </h5>
+            <h5 class="card-title">Nyxtext Zenith : Zenith of Editing</h5>
             <p class="card-text">
-              Nyxtext is a text editor designed to cater to the needs of both
-              writers and coders. It offers a user-friendly interface with
-              features specifically tailored for each user group. Nyxtext
-              provides essential writing tools like text correction, spell
-              checking, and potentially grammar suggestions (to be added in
-              future). These features help writers focus on their content and
-              produce polished documents. Nyxtext empowers coders with
-              functionalities like syntax highlighting, multiple code
-              workspaces, and integrated terminal access. These features
-              streamline the coding workflow, improve code readability, and
-              enhance developer productivity. Developed using Python and a
-              custom Tkinter framework, Nyxtext is open-source and welcomes
-              collaboration from the developer community. This collaborative
-              approach fosters continuous improvement and feature addition.
-              Nyxtext is currently in its alpha development stage. While it
-              offers several core functionalities, there are many exciting
-              features planned for future releases.
+              A modern, keyboard-centric text editor built with QT and
+              QScintilla, Supports 35+ programming languages out of the box and
+              features Lua-based customizations for themes and keybindings. It
+              offers a sleek interface with the Tokyonight theme by default,
+              code folding, and a dockable file tree. It's designed to be highly
+              efficient for daily coding tasks while remaining easily
+              extensible.
             </p>
             <a
-              href="https://github.com/parazeeknova/nyxtext"
+              href="https://github.com/parazeeknova/nyxtext-zenith"
               class="btn btn-primary m-2 opacity-50"
               >Github Repo ↺</a
-            >
-            <a href="#Projects" class="btn btn-primary m-2 opacity-50"
-              >More Info ↥</a
             >
           </div>
           <div class="card-footer">
@@ -302,6 +298,169 @@
             </h6>
             <small class="text-body-secondary"
               >Last updated 1 months ago | Alpha Stage | Desktop
+              Application</small
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card bg-body-tertiary shadow-sm">
+          <div
+            id="NyxText"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#NyxText"
+                data-bs-slide-to="0"
+                class="active opacity-50"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#NyxText"
+                data-bs-slide-to="1"
+                class="opacity-50"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#NyxText"
+                data-bs-slide-to="2"
+                class="opacity-50"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../resources/Projects/NyxText/Homescreen.png"
+                  class="d-block w-100"
+                  alt="Homescreen"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Homescreen</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../resources/Projects/NyxText/Codespace.png"
+                  class="d-block w-100"
+                  alt="Codespace"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Codespace</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../resources/Projects/NyxText/Terminal.png"
+                  class="d-block w-100"
+                  alt="terminal support"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-white-50">Terminal Support</h5>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#NyxText"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#NyxText"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">
+              NyxText: A Versatile Text Editor for Writers and Coders
+            </h5>
+            <p class="card-text">
+              Nyxtext is a text editor built with customtkinter
+              and tkinter to deliver a seamless writing and coding experience.
+              This versatile tool provides basic text editing by offering an
+              intuitive file tree for effortless project navigation and an
+              integrated terminal for swift command execution. With over a dozen
+              carefully crafted themes spanning both dark and light modes,
+              Nyxtext caters to every visual preference while maintaining a
+              sleek, modern interface. The editor boasts a rich set of features
+              including syntax highlighting, customizable shortcuts. Currently
+              depreciated (Check Nyxtext Zenith)
+            </p>
+            <a
+              href="https://github.com/parazeeknova/nyxtext"
+              class="btn btn-primary m-2 opacity-50"
+              >Github Repo ↺</a
+            >
+          </div>
+          <div class="card-footer">
+            <h6 class="text-body-secondary">
+              <strong>Built with: </strong>
+              <div class="d-flex gap-2 justify-content-center py-2 opacity-75">
+                <div class="row row-cols-auto">
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-brands fa-python rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Python
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-solid fa-window-maximize rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Tkinter
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-solid fa-window-restore rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Custom Tkinter
+                  </span>
+                  <span
+                    class="col badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill"
+                  >
+                    <i
+                      class="fa-brands fa-js rounded-circle m-2"
+                      style="color: #ffffff"
+                    ></i
+                    >Json
+                  </span>
+                </div>
+              </div>
+            </h6>
+            <small class="text-body-secondary"
+              >Last updated 1 months ago | Depreciated | Desktop
               Application</small
             >
           </div>
@@ -713,19 +872,18 @@
             id="dotfiles-current"
             class="carousel slide carousel-fade"
             data-bs-ride="carousel"
-          >
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="../resources/Projects/dotfiles-current/demo.png"
-                  class="d-block w-100"
-                  alt="Dotfile preview"
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-white-50">Homepage - ZaneyOS</h5>
-                </div>
+          ></div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../resources/Projects/dotfiles-current/demo.png"
+                class="d-block w-100"
+                alt="Dotfile preview"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-white-50">Homepage - ZaneyOS</h5>
               </div>
+            </div>
             <button
               class="carousel-control-prev"
               type="button"
