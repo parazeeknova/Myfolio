@@ -6,7 +6,8 @@
 
 ## MyFolio - Personal Portfolio Website
 
-<h3><a href="https://harshsahu-portfolio.vercel.app/">harshsahu-portfolio.vercel.app</a> - v1</h3> 
+<h3><a href="https://dev.zephyyrr.in">dev.zephyyrr.in</a> - v1</h3> 
+<h3><a href="https://folio.zephyyrr.in">folio.zephyyrr.in</a> - v2 (latest)</h3>
 </div>
 
 <p align="center">Personal portfolio website built with HTML, CSS, SASS(scss), Bootstrap, JavaScript, Jquery & Formspree.
@@ -17,12 +18,6 @@
 Welcome to MyFolio! This website showcases my projects, skills, and experiences. It is designed to provide an overview of my work and help you get to know me better.
 
 ![demo](../resources/Projects/hompagev2.png)
-
-## 🌴 Progress
-
-> Currently in development and is months away from completion.
-
-![Alt](https://repobeats.axiom.co/api/embed/f9c5fd72d1d0308d35f0c8cee765cbc48ebd554d.svg "Repobeats analytics image")
 
 &nbsp;
 
