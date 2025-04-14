@@ -23,7 +23,7 @@ html {
   background-image: url("../resources/background/catraingreen.gif");
   background-size: cover;
   -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -262,7 +262,11 @@ body::-webkit-scrollbar-thumb {
 
 .btn:hover {
   background: linear-gradient(0deg, #415f54, #82b3a2);
-  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4), inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 70px 0px #77a391;
+  box-shadow:
+    inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 70px 0px #77a391;
   transform: translateY(-2px);
 }
 
@@ -319,7 +323,9 @@ body::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.2);
   pointer-events: none;
-  transition: background 0.5s, box-shadow 0.5s;
+  transition:
+    background 0.5s,
+    box-shadow 0.5s;
 }
 
 #glow.glow-more {
@@ -348,7 +354,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   margin: 0 -45px;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   transform: rotate(calc(var(--r) * 1deg));
 }
 
@@ -433,7 +439,7 @@ body::-webkit-scrollbar-thumb {
   right: 0;
   background: rgba(0, 0, 0, 0.75);
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
 }
@@ -472,7 +478,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes updown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -488,7 +495,7 @@ body::-webkit-scrollbar-thumb {
   color: hsl(0, 0%, 50%);
   -webkit-user-select: none;
   -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 .bubble-text.split-text {
   display: inline-flex;
@@ -527,7 +534,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes updown {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -542,7 +550,9 @@ body::-webkit-scrollbar-thumb {
 .fighting {
   opacity: 0;
   display: none;
-  transition: opacity 0.5s 1s, visibility 0s 1s;
+  transition:
+    opacity 0.5s 1s,
+    visibility 0s 1s;
 }
 
 .fighting-gif:hover + .fighting {
@@ -630,7 +640,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 10em;
   color: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   opacity: 0.5;
   z-index: 0;
   transition: all 0.5s ease-in-out;
@@ -678,4 +688,4 @@ body::-webkit-scrollbar-thumb {
     opacity: 0;
     visibility: hidden;
   }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
