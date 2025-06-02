@@ -23,7 +23,7 @@
     "scss": "^0.2.4"
   },
   "devDependencies": {
-    "gulp": "^5.0.0",
+    "gulp": "^5.0.1",
     "gulp-copy": "^5.0.0"
   }
 }
