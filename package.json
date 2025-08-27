@@ -18,7 +18,7 @@
     "url": "https://github.com/yourusername/Myfolio/issues"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.8",
     "propper": "^1.0.4",
     "scss": "^0.2.4"
   },
